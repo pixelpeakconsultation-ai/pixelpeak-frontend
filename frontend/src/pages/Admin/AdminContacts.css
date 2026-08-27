@@ -1,0 +1,1059 @@
+/* ==========================================
+   ADMIN CONTACTS PAGE
+========================================== */
+
+.admin-contacts-page {
+  min-height: 100vh;
+  background: #07182e;
+  color: #ffffff;
+  display: flex;
+}
+
+/* ==========================================
+   SIDEBAR
+========================================== */
+
+.admin-contacts-sidebar {
+  width: 250px;
+  min-height: 100vh;
+  background: #0b1f3a;
+  border-right: 1px solid rgba(56, 189, 248, 0.12);
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 100;
+}
+
+.admin-contacts-logo {
+  padding: 28px 25px;
+
+  border-bottom: 1px solid
+    rgba(148, 163, 184, 0.1);
+}
+
+.admin-contacts-logo h2 {
+  margin: 0;
+
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.admin-contacts-logo h2 span {
+  color: #38bdf8;
+}
+
+.admin-contacts-logo p {
+  margin: 5px 0 0;
+
+  color: #64748b;
+
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+/* ==========================================
+   SIDEBAR NAVIGATION
+========================================== */
+
+.admin-contacts-nav {
+  flex: 1;
+  padding: 25px 15px;
+}
+
+.admin-contacts-nav-title {
+  padding: 0 12px;
+  margin-bottom: 12px;
+
+  color: #64748b;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.admin-contacts-nav-button {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 13px 14px;
+  margin-bottom: 6px;
+
+  border: none;
+  border-radius: 9px;
+
+  background: transparent;
+
+  color: #94a3b8;
+
+  font-size: 14px;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.admin-contacts-nav-button:hover,
+.admin-contacts-nav-button.active {
+  background: rgba(56, 189, 248, 0.1);
+
+  color: #38bdf8;
+}
+
+.admin-contacts-nav-icon {
+  width: 20px;
+
+  text-align: center;
+
+  font-size: 16px;
+}
+
+/* ==========================================
+   LOGOUT
+========================================== */
+
+.admin-contacts-sidebar-bottom {
+  padding: 15px;
+
+  border-top: 1px solid
+    rgba(148, 163, 184, 0.1);
+}
+
+.admin-contacts-logout {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 13px 14px;
+
+  border: none;
+  border-radius: 9px;
+
+  background: transparent;
+
+  color: #f87171;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  text-align: left;
+
+  transition: 0.25s ease;
+}
+
+.admin-contacts-logout:hover {
+  background: rgba(248, 113, 113, 0.1);
+}
+
+/* ==========================================
+   MAIN
+========================================== */
+
+.admin-contacts-main {
+  flex: 1;
+
+  min-width: 0;
+
+  margin-left: 250px;
+}
+
+/* ==========================================
+   TOP BAR
+========================================== */
+
+.admin-contacts-topbar {
+  min-height: 75px;
+
+  padding: 18px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  background: rgba(7, 24, 46, 0.95);
+
+  border-bottom: 1px solid
+    rgba(148, 163, 184, 0.1);
+
+  position: sticky;
+  top: 0;
+
+  z-index: 50;
+
+  backdrop-filter: blur(12px);
+}
+
+.admin-contacts-topbar h1 {
+  margin: 0 0 5px;
+
+  font-size: 21px;
+}
+
+.admin-contacts-topbar p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+}
+
+.admin-contacts-back {
+  padding: 9px 14px;
+
+  border: 1px solid
+    rgba(56, 189, 248, 0.2);
+
+  border-radius: 8px;
+
+  background: transparent;
+
+  color: #38bdf8;
+
+  font-size: 12px;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.admin-contacts-back:hover {
+  background: rgba(56, 189, 248, 0.1);
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.admin-contacts-content {
+  padding: 30px;
+}
+
+.admin-contacts-heading {
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.admin-contacts-heading h2 {
+  margin: 0 0 5px;
+
+  font-size: 20px;
+}
+
+.admin-contacts-heading p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+}
+
+.admin-refresh-button {
+  padding: 10px 16px;
+
+  border: 1px solid
+    rgba(56, 189, 248, 0.2);
+
+  border-radius: 8px;
+
+  background: rgba(56, 189, 248, 0.06);
+
+  color: #38bdf8;
+
+  font-size: 12px;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.admin-refresh-button:hover {
+  background: rgba(56, 189, 248, 0.12);
+}
+
+.admin-refresh-button:disabled {
+  opacity: 0.5;
+
+  cursor: not-allowed;
+}
+
+/* ==========================================
+   ERROR
+========================================== */
+
+.admin-contacts-error {
+  margin-bottom: 20px;
+
+  padding: 14px 16px;
+
+  border: 1px solid
+    rgba(248, 113, 113, 0.2);
+
+  border-radius: 10px;
+
+  background: rgba(248, 113, 113, 0.08);
+
+  color: #fca5a5;
+
+  font-size: 13px;
+}
+
+/* ==========================================
+   TABLE
+========================================== */
+
+.admin-contacts-table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+
+  background: #0b1f3a;
+
+  border: 1px solid
+    rgba(56, 189, 248, 0.1);
+
+  border-radius: 15px;
+}
+
+.admin-contacts-table {
+  width: 100%;
+
+  min-width: 850px;
+
+  border-collapse: collapse;
+}
+
+.admin-contacts-table th {
+  padding: 16px;
+
+  background: rgba(56, 189, 248, 0.04);
+
+  border-bottom: 1px solid
+    rgba(148, 163, 184, 0.1);
+
+  color: #64748b;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  text-align: left;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.7px;
+}
+
+.admin-contacts-table td {
+  padding: 16px;
+
+  border-bottom: 1px solid
+    rgba(148, 163, 184, 0.07);
+
+  color: #cbd5e1;
+
+  font-size: 12px;
+
+  vertical-align: middle;
+}
+
+.admin-contacts-table tbody tr {
+  transition: 0.2s ease;
+}
+
+.admin-contacts-table tbody tr:hover {
+  background: rgba(56, 189, 248, 0.035);
+}
+
+.admin-contacts-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-contacts-table td strong {
+  color: #ffffff;
+
+  font-size: 13px;
+}
+
+.contact-email {
+  color: #94a3b8;
+}
+
+.contact-service {
+  display: inline-block;
+
+  padding: 5px 8px;
+
+  border-radius: 5px;
+
+  background: rgba(56, 189, 248, 0.08);
+
+  color: #38bdf8;
+
+  font-size: 11px;
+}
+
+/* ==========================================
+   VIEW BUTTON
+========================================== */
+
+.contact-view-button {
+  padding: 7px 12px;
+
+  border: 1px solid
+    rgba(56, 189, 248, 0.2);
+
+  border-radius: 6px;
+
+  background: transparent;
+
+  color: #38bdf8;
+
+  font-size: 11px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.contact-view-button:hover {
+  background: rgba(56, 189, 248, 0.1);
+}
+
+/* ==========================================
+   EMPTY / LOADING
+========================================== */
+
+.admin-contacts-state {
+  min-height: 300px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 40px;
+
+  background: #0b1f3a;
+
+  border: 1px solid
+    rgba(56, 189, 248, 0.1);
+
+  border-radius: 15px;
+
+  text-align: center;
+}
+
+.admin-contacts-state p {
+  margin: 8px 0 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+.admin-contacts-state h3 {
+  margin: 15px 0 0;
+
+  font-size: 17px;
+}
+
+.admin-empty-icon {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(56, 189, 248, 0.08);
+
+  color: #38bdf8;
+
+  font-size: 23px;
+}
+
+.admin-spinner {
+  width: 32px;
+  height: 32px;
+
+  border: 3px solid
+    rgba(56, 189, 248, 0.15);
+
+  border-top-color: #38bdf8;
+
+  border-radius: 50%;
+
+  animation: adminContactSpin 0.8s linear infinite;
+}
+
+@keyframes adminContactSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ==========================================
+   MOBILE CARDS
+========================================== */
+
+.admin-contacts-mobile {
+  display: none;
+}
+
+.admin-contact-card {
+  padding: 18px;
+
+  margin-bottom: 15px;
+
+  background: #0b1f3a;
+
+  border: 1px solid
+    rgba(56, 189, 248, 0.1);
+
+  border-radius: 13px;
+}
+
+.admin-contact-card-top {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 18px;
+}
+
+.admin-contact-card-top h3 {
+  margin: 0 0 5px;
+
+  font-size: 16px;
+}
+
+.admin-contact-card-top a {
+  color: #38bdf8;
+
+  font-size: 11px;
+
+  text-decoration: none;
+
+  word-break: break-word;
+}
+
+.contact-date {
+  color: #64748b;
+
+  font-size: 10px;
+
+  white-space: nowrap;
+}
+
+.admin-contact-card-info {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 10px;
+
+  margin-bottom: 16px;
+}
+
+.admin-contact-card-info div {
+  padding: 10px;
+
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.admin-contact-card-info span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #64748b;
+
+  font-size: 9px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+}
+
+.admin-contact-card-info strong {
+  color: #cbd5e1;
+
+  font-size: 11px;
+}
+
+.contact-mobile-view {
+  width: 100%;
+
+  padding: 10px;
+
+  border: 1px solid
+    rgba(56, 189, 248, 0.2);
+
+  border-radius: 7px;
+
+  background: transparent;
+
+  color: #38bdf8;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+/* ==========================================
+   MODAL
+========================================== */
+
+.admin-contact-modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 1000;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(2, 8, 23, 0.8);
+
+  backdrop-filter: blur(6px);
+}
+
+.admin-contact-modal {
+  width: 100%;
+
+  max-width: 600px;
+
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  background: #0b1f3a;
+
+  border: 1px solid
+    rgba(56, 189, 248, 0.15);
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 25px 80px rgba(0, 0, 0, 0.45);
+}
+
+.admin-contact-modal-header {
+  padding: 22px;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  border-bottom: 1px solid
+    rgba(148, 163, 184, 0.1);
+}
+
+.admin-contact-modal-header span {
+  color: #38bdf8;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.admin-contact-modal-header h2 {
+  margin: 6px 0 0;
+
+  font-size: 21px;
+}
+
+.admin-modal-close {
+  width: 34px;
+  height: 34px;
+
+  border: 1px solid
+    rgba(148, 163, 184, 0.15);
+
+  border-radius: 8px;
+
+  background: transparent;
+
+  color: #94a3b8;
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.admin-modal-close:hover {
+  color: #ffffff;
+
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.admin-contact-modal-body {
+  padding: 22px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 18px;
+}
+
+.contact-detail {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+.contact-detail span,
+.contact-message > span {
+  color: #64748b;
+
+  font-size: 10px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.7px;
+}
+
+.contact-detail strong {
+  color: #ffffff;
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  word-break: break-word;
+}
+
+.contact-detail a {
+  color: #38bdf8;
+
+  font-size: 13px;
+
+  text-decoration: none;
+
+  word-break: break-word;
+}
+
+.contact-message {
+  grid-column: 1 / -1;
+
+  padding-top: 5px;
+}
+
+.contact-message p {
+  margin: 10px 0 0;
+
+  padding: 15px;
+
+  border-radius: 9px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  color: #cbd5e1;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+
+  white-space: pre-wrap;
+
+  word-break: break-word;
+}
+
+/* ==========================================
+   MODAL FOOTER
+========================================== */
+
+.admin-contact-modal-footer {
+  padding: 18px 22px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  border-top: 1px solid
+    rgba(148, 163, 184, 0.1);
+}
+
+.admin-modal-delete,
+.admin-modal-cancel {
+  padding: 10px 16px;
+
+  border-radius: 7px;
+
+  font-size: 12px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.admin-modal-delete {
+  border: 1px solid
+    rgba(248, 113, 113, 0.2);
+
+  background: rgba(248, 113, 113, 0.08);
+
+  color: #f87171;
+}
+
+.admin-modal-delete:hover {
+  background: rgba(248, 113, 113, 0.15);
+}
+
+.admin-modal-delete:disabled {
+  opacity: 0.5;
+
+  cursor: not-allowed;
+}
+
+.admin-modal-cancel {
+  border: 1px solid
+    rgba(148, 163, 184, 0.15);
+
+  background: transparent;
+
+  color: #94a3b8;
+}
+
+.admin-modal-cancel:hover {
+  background: rgba(255, 255, 255, 0.05);
+
+  color: #ffffff;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 900px) {
+  .admin-contacts-sidebar {
+    width: 210px;
+  }
+
+  .admin-contacts-main {
+    margin-left: 210px;
+  }
+
+  .admin-contacts-content {
+    padding: 25px 20px;
+  }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 650px) {
+  .admin-contacts-sidebar {
+    width: 70px;
+  }
+
+  .admin-contacts-main {
+    margin-left: 70px;
+  }
+
+  .admin-contacts-logo {
+    padding: 20px 10px;
+
+    text-align: center;
+  }
+
+  .admin-contacts-logo h2 {
+    font-size: 0;
+  }
+
+  .admin-contacts-logo h2::after {
+    content: "PP";
+
+    color: #38bdf8;
+
+    font-size: 20px;
+  }
+
+  .admin-contacts-logo p,
+  .admin-contacts-nav-title,
+  .admin-contacts-nav-button span:not(
+      .admin-contacts-nav-icon
+    ),
+  .admin-contacts-logout span:last-child {
+    display: none;
+  }
+
+  .admin-contacts-nav-button {
+    justify-content: center;
+
+    padding: 14px 5px;
+  }
+
+  .admin-contacts-nav-icon {
+    font-size: 18px;
+  }
+
+  .admin-contacts-logout {
+    justify-content: center;
+
+    padding: 14px 5px;
+  }
+
+  .admin-contacts-topbar {
+    padding: 15px;
+
+    align-items: flex-start;
+  }
+
+  .admin-contacts-topbar h1 {
+    font-size: 17px;
+  }
+
+  .admin-contacts-topbar p {
+    font-size: 10px;
+  }
+
+  .admin-contacts-back {
+    font-size: 10px;
+
+    padding: 8px 10px;
+
+    white-space: nowrap;
+  }
+
+  .admin-contacts-content {
+    padding: 20px 15px;
+  }
+
+  .admin-contacts-heading {
+    align-items: flex-end;
+  }
+
+  .admin-contacts-heading h2 {
+    font-size: 17px;
+  }
+
+  .admin-refresh-button {
+    padding: 8px 11px;
+  }
+
+  .admin-contacts-table-wrapper {
+    display: none;
+  }
+
+  .admin-contacts-mobile {
+    display: block;
+  }
+
+  .admin-contact-modal-overlay {
+    padding: 12px;
+  }
+
+  .admin-contact-modal {
+    max-height: 94vh;
+
+    border-radius: 13px;
+  }
+
+  .admin-contact-modal-header {
+    padding: 18px;
+  }
+
+  .admin-contact-modal-header h2 {
+    font-size: 18px;
+  }
+
+  .admin-contact-modal-body {
+    padding: 18px;
+
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .contact-message {
+    grid-column: auto;
+  }
+
+  .admin-contact-modal-footer {
+    padding: 15px 18px;
+
+    justify-content: stretch;
+  }
+
+  .admin-modal-delete,
+  .admin-modal-cancel {
+    flex: 1;
+  }
+}
+
+@media (max-width: 420px) {
+  .admin-contact-card-info {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-contacts-topbar {
+    display: block;
+  }
+
+  .admin-contacts-back {
+    margin-top: 12px;
+  }
+
+  .admin-contacts-heading {
+    align-items: flex-start;
+  }
+}

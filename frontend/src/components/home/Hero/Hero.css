@@ -1,0 +1,821 @@
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 720px;
+  min-height: 720px;
+  overflow: hidden;
+  background: #07111f;
+}
+
+/* ==========================================
+   HERO PARTICLES
+========================================== */
+
+.hero-particles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* ==========================================
+   HERO CONTAINER
+========================================== */
+
+.hero-container {
+  position: relative;
+  width: 90%;
+  max-width: 1350px;
+  height: 100%;
+  min-height: 720px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: stretch;
+
+  z-index: 2;
+}
+
+/* ==========================================
+   LEFT CONTENT
+========================================== */
+
+.hero-left {
+  position: relative;
+  width: 52%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 50px 0;
+
+  z-index: 5;
+}
+
+/* ==========================================
+   TAG
+========================================== */
+
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+
+  width: fit-content;
+
+  padding: 10px 22px;
+
+  border: 1px solid #168cff;
+  border-radius: 50px;
+
+  color: #38bdf8;
+  background: rgba(0, 102, 255, 0.08);
+
+  font-size: 14px;
+
+  margin-bottom: 30px;
+
+  box-shadow: 0 0 20px rgba(0, 140, 255, 0.08);
+}
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.hero-title {
+  margin: 0;
+
+  max-width: 700px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(55px, 5.5vw, 82px);
+
+  line-height: 0.98;
+
+  font-weight: 700;
+
+  letter-spacing: -2px;
+
+  color: #ffffff;
+}
+
+/* ==========================================
+   TYPEWRITER TEXT
+========================================== */
+
+.typing-text {
+  display: inline-block;
+
+  color: #20b8ff;
+
+  text-shadow: 0 0 25px rgba(32, 184, 255, 0.18);
+
+  /*
+    Fixed width prevents the hero
+    from moving when text changes.
+  */
+
+  min-width: 430px;
+}
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.hero-description {
+  max-width: 650px;
+
+  margin-top: 38px;
+
+  font-size: 18px;
+
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+
+  gap: 28px;
+
+  margin-top: 35px;
+}
+
+/* ==========================================
+   PRIMARY BUTTON
+========================================== */
+
+.primary-btn {
+  min-width: 245px;
+
+  padding: 16px 25px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.22);
+}
+
+.primary-btn:hover {
+  background: #1677ff;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.35);
+}
+
+/* ==========================================
+   SECONDARY BUTTON
+========================================== */
+
+.secondary-btn {
+  min-width: 195px;
+
+  padding: 15px 25px;
+
+  border: 1px solid #168cff;
+
+  border-radius: 8px;
+
+  background: transparent;
+
+  color: #ffffff;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background: rgba(22, 140, 255, 0.08);
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 0 20px rgba(22, 140, 255, 0.15);
+}
+
+/* ==========================================
+   STATS
+========================================== */
+
+.hero-stats {
+  display: flex;
+  align-items: center;
+
+  gap: 55px;
+
+  margin-top: 50px;
+}
+
+.hero-stat {
+  position: relative;
+
+  padding-right: 45px;
+}
+
+.hero-stat:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+
+  right: 0;
+  top: 5px;
+
+  width: 1px;
+  height: 55px;
+
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.hero-stat h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 32px;
+
+  font-weight: 700;
+}
+
+.hero-stat span {
+  display: block;
+
+  margin-top: 5px;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 14px;
+}
+
+/* ==========================================
+   HERO RIGHT SIDE
+========================================== */
+
+.hero-right {
+  position: relative;
+
+  width: 48%;
+  height: 100%;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  overflow: hidden;
+
+  z-index: 3;
+}
+
+/* ==========================================
+   LOGO AREA
+========================================== */
+
+.hero-logo-area {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  z-index: 2;
+}
+
+/* ==========================================
+   LOGO GLOW
+========================================== */
+
+.logo-glow {
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  bottom: -120px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(56, 189, 248, 0.35) 0%,
+    rgba(56, 189, 248, 0.15) 35%,
+    transparent 70%
+  );
+
+  filter: blur(30px);
+
+  pointer-events: none;
+
+  z-index: 1;
+
+  animation: glowPulse 5s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%,
+  100% {
+    transform: translateX(-50%) scale(0.92);
+    opacity: 0.65;
+  }
+
+  50% {
+    transform: translateX(-50%) scale(1.08);
+    opacity: 1;
+  }
+}
+
+/* ==========================================
+   ROBOT LOGO
+========================================== */
+
+/*
+   Slightly increased from the previous size.
+*/
+
+.hero-robot-logo {
+  position: relative;
+
+  display: block;
+
+  width: 560px;
+
+  max-width: 100%;
+
+  height: auto;
+
+  margin: 0;
+
+  object-fit: contain;
+
+  z-index: 3;
+
+  filter:
+    drop-shadow(0 0 25px rgba(0, 174, 255, 0.35))
+    drop-shadow(0 0 60px rgba(0, 100, 255, 0.2));
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1100px) {
+  .hero {
+    height: 680px;
+    min-height: 680px;
+  }
+
+  .hero-container {
+    width: 92%;
+    min-height: 680px;
+  }
+
+  .hero-left {
+    width: 55%;
+  }
+
+  .hero-right {
+    width: 45%;
+  }
+
+  .hero-title {
+    font-size: clamp(48px, 5.5vw, 68px);
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .typing-text {
+    min-width: 360px;
+  }
+
+  /*
+     Increased from 420px → 460px
+  */
+
+  .hero-robot-logo {
+    width: 460px;
+  }
+
+  .logo-glow {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+/* ==========================================
+   TABLET / SMALL LAPTOP
+========================================== */
+
+@media (max-width: 900px) {
+  .hero {
+    height: 650px;
+    min-height: 650px;
+  }
+
+  .hero-container {
+    min-height: 650px;
+  }
+
+  .hero-left {
+    width: 55%;
+  }
+
+  .hero-right {
+    width: 45%;
+  }
+
+  .hero-title {
+    font-size: 52px;
+  }
+
+  .typing-text {
+    min-width: 330px;
+  }
+
+  /*
+     Increased from 360px → 390px
+  */
+
+  .hero-robot-logo {
+    width: 390px;
+  }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    min-height: 900px;
+  }
+
+  .hero-container {
+    width: 90%;
+
+    height: auto;
+
+    min-height: 900px;
+
+    flex-direction: column;
+
+    padding: 55px 0 0;
+  }
+
+  /* ------------------------------------------
+     LEFT CONTENT
+  ------------------------------------------ */
+
+  .hero-left {
+    order: 1;
+
+    width: 100%;
+
+    height: auto;
+
+    min-height: 510px;
+
+    padding: 20px 0;
+
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .hero-tag {
+    margin-bottom: 25px;
+  }
+
+  .hero-title {
+    max-width: 100%;
+
+    font-size: clamp(43px, 11vw, 60px);
+
+    line-height: 1.02;
+
+    letter-spacing: -1px;
+  }
+
+  .typing-text {
+    min-width: 0;
+
+    max-width: 100%;
+  }
+
+  .hero-description {
+    margin: 28px auto 0;
+
+    max-width: 600px;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+  }
+
+  /* ------------------------------------------
+     BUTTONS
+  ------------------------------------------ */
+
+  .hero-buttons {
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-top: 30px;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    min-width: 210px;
+  }
+
+  /* ------------------------------------------
+     STATS
+  ------------------------------------------ */
+
+  .hero-stats {
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 40px;
+  }
+
+  .hero-stat {
+    padding-right: 25px;
+  }
+
+  .hero-stat h2 {
+    font-size: 27px;
+  }
+
+  /* ------------------------------------------
+     ROBOT
+  ------------------------------------------ */
+
+  .hero-right {
+    order: 2;
+
+    width: 100%;
+
+    height: 350px;
+
+    min-height: 350px;
+
+    margin-top: 15px;
+
+    align-items: flex-end;
+  }
+
+  .hero-logo-area {
+    height: 100%;
+
+    align-items: flex-end;
+  }
+
+  /*
+     Increased from 330px → 360px
+  */
+
+  .hero-robot-logo {
+    width: 360px;
+
+    max-width: 90%;
+  }
+
+  .logo-glow {
+    width: 280px;
+    height: 280px;
+
+    bottom: -80px;
+  }
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 850px;
+  }
+
+  .hero-container {
+    width: 92%;
+
+    min-height: 850px;
+
+    padding-top: 40px;
+  }
+
+  .hero-left {
+    min-height: 490px;
+  }
+
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+  /* ------------------------------------------
+     MOBILE BUTTONS
+  ------------------------------------------ */
+
+  .hero-buttons {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+
+    max-width: 300px;
+  }
+
+  /* ------------------------------------------
+     MOBILE STATS
+  ------------------------------------------ */
+
+  .hero-stats {
+    gap: 12px;
+  }
+
+  .hero-stat {
+    padding-right: 15px;
+  }
+
+  .hero-stat h2 {
+    font-size: 24px;
+  }
+
+  .hero-stat span {
+    font-size: 12px;
+  }
+
+  /* ------------------------------------------
+     MOBILE ROBOT
+  ------------------------------------------ */
+
+  .hero-right {
+    height: 300px;
+
+    min-height: 300px;
+  }
+
+  /*
+     Increased from 290px → 320px
+  */
+
+  .hero-robot-logo {
+    width: 320px;
+  }
+
+  .logo-glow {
+    width: 250px;
+    height: 250px;
+
+    bottom: -70px;
+  }
+}
+
+/* ==========================================
+   VERY SMALL MOBILE
+========================================== */
+
+@media (max-width: 380px) {
+  .hero {
+    min-height: 820px;
+  }
+
+  .hero-container {
+    min-height: 820px;
+  }
+
+  .hero-left {
+    min-height: 475px;
+  }
+
+  .hero-title {
+    font-size: 38px;
+  }
+
+  .hero-right {
+    height: 285px;
+
+    min-height: 285px;
+  }
+
+  /*
+     Increased from 270px → 300px
+  */
+
+  .hero-robot-logo {
+    width: 300px;
+  }
+}
+
+.primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 195px;
+  height: 52px;
+
+  padding: 0 25px;
+
+  border: 1px solid #168cff;
+  border-radius: 8px;
+
+  background: transparent;
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 600;
+  font-family: inherit;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background: rgba(22, 140, 255, 0.08);
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 0 20px rgba(22, 140, 255, 0.15);
+}
+
+@media (max-width: 768px) {
+  .secondary-btn {
+    min-width: 210px;
+    height: 50px;
+    padding: 0 22px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .secondary-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}

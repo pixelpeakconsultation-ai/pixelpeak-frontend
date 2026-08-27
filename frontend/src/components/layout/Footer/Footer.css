@@ -1,0 +1,656 @@
+/* ==========================================
+   PIXELPEAK FOOTER
+========================================== */
+
+.site-footer {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      180deg,
+      #07182e 0%,
+      #050d1a 100%
+    );
+
+  border-top:
+    1px solid
+    rgba(56, 189, 248, 0.12);
+}
+
+
+/* ==========================================
+   GLOW
+========================================== */
+
+.footer-glow {
+  position: absolute;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  filter: blur(100px);
+}
+
+.footer-glow-one {
+  width: 400px;
+  height: 400px;
+
+  top: -280px;
+  left: -150px;
+
+  background:
+    rgba(56, 189, 248, 0.07);
+}
+
+.footer-glow-two {
+  width: 300px;
+  height: 300px;
+
+  right: -150px;
+  bottom: -180px;
+
+  background:
+    rgba(37, 99, 235, 0.06);
+}
+
+
+/* ==========================================
+   MAIN CONTAINER
+========================================== */
+
+.footer-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: 90%;
+
+  max-width: 1200px;
+
+  margin: auto;
+
+  padding:
+    75px 0
+    65px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.7fr
+    1fr
+    1.25fr
+    1fr;
+
+  gap: 55px;
+}
+
+
+/* ==========================================
+   BRAND
+========================================== */
+
+.footer-brand {
+  max-width: 370px;
+}
+
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.footer-logo-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  margin-bottom: 24px;
+
+  text-decoration: none;
+}
+
+.footer-logo {
+  display: block;
+
+  width: 180px;
+
+  height: auto;
+
+  max-width: 100%;
+
+  object-fit: contain;
+}
+
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.footer-description {
+  margin: 0 0 23px;
+
+  color:
+    rgba(255, 255, 255, 0.58);
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+/* ==========================================
+   EMAIL
+========================================== */
+
+.footer-email {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color:
+    rgba(255, 255, 255, 0.78);
+
+  font-size: 14px;
+
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease;
+}
+
+.footer-email:hover {
+  color: #38bdf8;
+}
+
+.footer-email-icon {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(56, 189, 248, 0.35);
+
+  border-radius: 50%;
+
+  background:
+    rgba(56, 189, 248, 0.08);
+
+  color: #38bdf8;
+
+  font-size: 14px;
+
+  transition:
+    0.3s ease;
+}
+
+.footer-email:hover
+.footer-email-icon {
+  background: #38bdf8;
+
+  color: #07111f;
+
+  transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   BRAND SOCIAL ICONS
+========================================== */
+
+.footer-socials {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  margin-top: 22px;
+}
+
+.footer-social {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* FACEBOOK */
+
+.footer-social.facebook {
+  background: #1877f2;
+
+  color: #ffffff;
+}
+
+
+/* INSTAGRAM */
+
+.footer-social.instagram {
+  background:
+    linear-gradient(
+      45deg,
+      #feda75,
+      #fa7e1e,
+      #d62976,
+      #962fbf,
+      #4f5bd5
+    );
+
+  color: #ffffff;
+}
+
+
+/* TIKTOK */
+
+.footer-social.tiktok {
+  background: #000000;
+
+  color: #ffffff;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.18);
+}
+
+
+/* HOVER */
+
+.footer-social:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 8px 20px
+    rgba(0, 0, 0, 0.35);
+}
+
+
+/* ==========================================
+   FOOTER COLUMNS
+========================================== */
+
+.footer-column h3 {
+  margin:
+    5px 0
+    22px;
+
+  color: #ffffff;
+
+  font-size: 16px;
+
+  font-weight: 600;
+}
+
+.footer-column ul {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+
+  margin: 0;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer-column a {
+  color:
+    rgba(255, 255, 255, 0.55);
+
+  font-size: 13px;
+
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.footer-column ul a {
+  display: inline-block;
+}
+
+.footer-column ul a:hover {
+  color: #38bdf8;
+
+  transform: translateX(4px);
+}
+
+
+/* ==========================================
+   FOLLOW US
+========================================== */
+
+.footer-social-text {
+  max-width: 240px;
+
+  margin: 0 0 23px;
+
+  color:
+    rgba(255, 255, 255, 0.52);
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* ==========================================
+   FOLLOW ICONS
+========================================== */
+
+.footer-follow-icons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+}
+
+.follow-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  text-decoration: none;
+
+  font-size: 17px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* FACEBOOK */
+
+.follow-icon.facebook {
+  background: #1877f2;
+
+  color: #ffffff;
+}
+
+
+/* INSTAGRAM */
+
+.follow-icon.instagram {
+  background:
+    linear-gradient(
+      45deg,
+      #feda75,
+      #fa7e1e,
+      #d62976,
+      #962fbf,
+      #4f5bd5
+    );
+
+  color: #ffffff;
+}
+
+
+/* TIKTOK */
+
+.follow-icon.tiktok {
+  background: #000000;
+
+  color: #ffffff;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.2);
+}
+
+
+/* HOVER */
+
+.follow-icon:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 10px 25px
+    rgba(0, 0, 0, 0.35);
+}
+
+
+/* ==========================================
+   BOTTOM
+========================================== */
+
+.footer-bottom {
+  position: relative;
+
+  z-index: 2;
+
+  border-top:
+    1px solid
+    rgba(255, 255, 255, 0.08);
+}
+
+.footer-bottom-container {
+  width: 90%;
+
+  max-width: 1200px;
+
+  min-height: 75px;
+
+  margin: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+
+  color:
+    rgba(255, 255, 255, 0.42);
+
+  font-size: 12px;
+}
+
+
+/* ==========================================
+   BOTTOM LINKS
+========================================== */
+
+.footer-bottom-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+}
+
+.footer-bottom-links a {
+  color:
+    rgba(255, 255, 255, 0.42);
+
+  font-size: 12px;
+
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: #38bdf8;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 950px) {
+
+  .footer-container {
+    grid-template-columns:
+      1.5fr
+      1fr
+      1fr;
+
+    gap: 45px;
+  }
+
+  .footer-brand {
+    max-width: 100%;
+  }
+
+  .footer-follow {
+    grid-column: 2 / 4;
+  }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 650px) {
+
+  .footer-container {
+    width: 88%;
+
+    padding:
+      60px 0
+      45px;
+
+    grid-template-columns: 1fr;
+
+    gap: 38px;
+  }
+
+
+  .footer-brand {
+    max-width: 100%;
+  }
+
+
+  .footer-logo {
+    width: 165px;
+  }
+
+
+  .footer-description {
+    font-size: 13px;
+
+    line-height: 1.75;
+  }
+
+
+  .footer-column {
+    width: 100%;
+  }
+
+
+  .footer-follow {
+    grid-column: auto;
+  }
+
+
+  .footer-socials {
+    margin-top: 20px;
+  }
+
+
+  .footer-social {
+    width: 40px;
+    height: 40px;
+  }
+
+
+  .footer-follow-icons {
+    gap: 12px;
+  }
+
+
+  .follow-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+
+  .footer-bottom-container {
+    width: 88%;
+
+    min-height: auto;
+
+    padding:
+      22px 0;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 14px;
+  }
+
+
+  .footer-bottom-links {
+    flex-wrap: wrap;
+
+    gap:
+      12px 22px;
+  }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 400px) {
+
+  .footer-container {
+    width: 90%;
+  }
+
+  .footer-logo {
+    width: 150px;
+  }
+
+  .footer-bottom-container {
+    width: 90%;
+  }
+
+}

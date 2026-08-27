@@ -1,0 +1,544 @@
+/* ==========================================
+   Navbar
+========================================== */
+
+.navbar {
+  width: 100%;
+  height: 85px;
+  background: #0f172a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* ==========================================
+   Container
+========================================== */
+
+.container {
+  width: 90%;
+  max-width: 1350px;
+  height: 100%;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* ==========================================
+   Logo
+========================================== */
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo img {
+  height: 82px;
+  width: auto;
+  max-width: 190px;
+  object-fit: contain;
+  display: block;
+  transition: 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+
+/* ==========================================
+   Navigation
+========================================== */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 108px;
+  height: 42px;
+
+  text-decoration: none;
+  color: #ffffff;
+
+  background: #111827;
+  border: 1px solid #38bdf8;
+  border-radius: 50px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  transition: all 0.35s ease;
+}
+
+
+/* ==========================================
+   Hover
+========================================== */
+
+.nav-links a:hover {
+  background: #38bdf8;
+  color: #ffffff;
+
+  box-shadow:
+    0 0 15px rgba(56, 189, 248, 0.45);
+
+  transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   Active
+========================================== */
+
+.nav-links a.active {
+  background: #38bdf8;
+  color: #ffffff;
+
+  box-shadow:
+    0 0 15px rgba(56, 189, 248, 0.45);
+}
+
+
+/* ==========================================
+   CTA Button
+========================================== */
+
+.consult-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #2563eb;
+  color: white;
+
+  padding: 13px 24px;
+
+  border: none;
+  border-radius: 50px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+  white-space: nowrap;
+
+  transition: all 0.35s ease;
+}
+
+.consult-btn:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0 18px rgba(37, 99, 235, 0.45);
+}
+
+
+/* ==========================================
+   Mobile CTA
+========================================== */
+
+.mobile-consult {
+  display: none;
+}
+
+
+/* ==========================================
+   Hamburger
+========================================== */
+
+.menu-toggle {
+  display: none;
+
+  width: 44px;
+  height: 44px;
+
+  padding: 8px;
+
+  border: 1px solid #38bdf8;
+  border-radius: 10px;
+
+  background: #111827;
+
+  cursor: pointer;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+
+  flex-shrink: 0;
+}
+
+.menu-toggle span {
+  width: 23px;
+  height: 2px;
+
+  background: #ffffff;
+
+  border-radius: 5px;
+
+  transition: all 0.3s ease;
+}
+
+
+/* ==========================================
+   Hamburger Animation
+========================================== */
+
+.menu-toggle.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+
+/* ==========================================
+   LARGE TABLET
+========================================== */
+
+@media (max-width: 1200px) {
+  .container {
+    width: 94%;
+  }
+
+  .nav-links {
+    gap: 6px;
+  }
+
+  .nav-links a {
+    width: 88px;
+    font-size: 13px;
+  }
+
+  .consult-btn {
+    padding: 12px 17px;
+    font-size: 13px;
+  }
+
+  .logo img {
+    max-width: 170px;
+  }
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1050px) {
+  .navbar {
+    height: 80px;
+  }
+
+  .logo img {
+    height: 76px;
+  }
+
+  .nav-links {
+    gap: 5px;
+  }
+
+  .nav-links a {
+    width: 80px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .consult-btn {
+    padding: 11px 14px;
+    font-size: 12px;
+  }
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 850px) {
+  .navbar {
+    height: 75px;
+  }
+
+  .container {
+    width: 92%;
+  }
+
+
+  /* ------------------------------------------
+     Logo
+  ------------------------------------------ */
+
+  .logo img {
+    height: 68px;
+    max-width: 170px;
+  }
+
+
+  /* ------------------------------------------
+     Hide Desktop CTA
+  ------------------------------------------ */
+
+  .desktop-consult {
+    display: none;
+  }
+
+
+  /* ------------------------------------------
+     Show Hamburger
+  ------------------------------------------ */
+
+  .menu-toggle {
+    display: flex;
+  }
+
+
+  /* ------------------------------------------
+     Mobile Navigation
+  ------------------------------------------ */
+
+  .nav-links {
+    position: absolute;
+
+    top: 75px;
+    left: 0;
+
+    width: 100%;
+
+    padding: 20px;
+
+    background: #0f172a;
+
+    border-bottom:
+      1px solid rgba(56, 189, 248, 0.25);
+
+    box-shadow:
+      0 15px 30px rgba(0, 0, 0, 0.35);
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 12px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-15px);
+
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease,
+      visibility 0.3s ease;
+  }
+
+
+  /* ------------------------------------------
+     Open Menu
+  ------------------------------------------ */
+
+  .nav-links.mobile-open {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+  }
+
+
+  /* ------------------------------------------
+     Mobile Links
+  ------------------------------------------ */
+
+  .nav-links a {
+    width: 100%;
+    height: 48px;
+
+    border-radius: 12px;
+
+    background: #111827;
+
+    font-size: 15px;
+  }
+
+  .nav-links a:hover {
+    transform: none;
+  }
+
+
+  /* ------------------------------------------
+     Mobile CTA
+  ------------------------------------------ */
+
+  .mobile-consult {
+    display: flex;
+
+    width: 100%;
+    height: 48px;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 5px;
+
+    padding: 0 20px;
+
+    border-radius: 12px;
+
+    font-size: 15px;
+  }
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+  .navbar {
+    height: 72px;
+  }
+
+  .container {
+    width: 92%;
+  }
+
+  .logo img {
+    height: 64px;
+    max-width: 155px;
+  }
+
+  .menu-toggle {
+    width: 43px;
+    height: 43px;
+  }
+
+  .nav-links {
+    top: 72px;
+    padding: 17px;
+  }
+}
+
+
+/* ==========================================
+   VERY SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+  .navbar {
+    height: 70px;
+  }
+
+  .container {
+    width: 92%;
+  }
+
+  .logo img {
+    height: 62px;
+    max-width: 145px;
+  }
+
+  .menu-toggle {
+    width: 42px;
+    height: 42px;
+  }
+
+  .nav-links {
+    top: 70px;
+    padding: 16px;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    height: 46px;
+    font-size: 14px;
+  }
+
+  .mobile-consult {
+    height: 46px;
+    font-size: 14px;
+  }
+}
+
+
+/* ==========================================
+   EXTRA SMALL PHONES
+========================================== */
+
+@media (max-width: 360px) {
+  .container {
+    width: 94%;
+  }
+
+  .logo img {
+    height: 58px;
+    max-width: 135px;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .menu-toggle span {
+    width: 21px;
+  }
+
+  .nav-links {
+    padding: 14px;
+  }
+
+  .nav-links a {
+    height: 44px;
+  }
+
+  .mobile-consult {
+    height: 44px;
+  }
+}
+
+
+/* ==========================================
+   Prevent Horizontal Overflow
+========================================== */
+
+.navbar,
+.navbar * {
+  box-sizing: border-box;
+}
+
+.navbar {
+  overflow: visible;
+}
+
+.nav-links a,
+.consult-btn,
+.menu-toggle {
+  -webkit-tap-highlight-color: transparent;
+}
+
