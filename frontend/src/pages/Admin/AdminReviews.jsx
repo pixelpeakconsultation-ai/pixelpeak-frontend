@@ -32,7 +32,7 @@ function AdminReviews() {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/reviews/admin",
+        "https://backend-psi-rouge-29.vercel.app/api/reviews/admin",
         {
           method: "GET",
           headers: {
@@ -83,7 +83,7 @@ function AdminReviews() {
       setActionLoading(true);
 
       const response = await fetch(
-        `http://localhost:5000/api/reviews/${reviewId}/approve`,
+        `https://backend-psi-rouge-29.vercel.app/api/reviews/${reviewId}/approve`,
         {
           method: "PATCH",
           headers: {
@@ -157,7 +157,7 @@ function AdminReviews() {
       setActionLoading(true);
 
       const response = await fetch(
-        `http://localhost:5000/api/reviews/${reviewId}`,
+        `https://backend-psi-rouge-29.vercel.app/api/reviews/${reviewId}`,
         {
           method: "DELETE",
           headers: {

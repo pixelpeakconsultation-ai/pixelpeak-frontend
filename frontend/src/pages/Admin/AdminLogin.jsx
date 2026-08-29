@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./AdminLogin.css";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://backend-psi-rouge-29.vercel.app";
 
 function AdminLogin() {
   const navigate = useNavigate();

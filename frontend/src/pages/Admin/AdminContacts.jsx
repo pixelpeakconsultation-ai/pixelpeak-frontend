@@ -32,7 +32,7 @@ function AdminContacts() {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/contact",
+        "https://backend-psi-rouge-29.vercel.app/api/contact",
         {
           method: "GET",
           headers: {
@@ -95,7 +95,7 @@ function AdminContacts() {
       setDeleteLoading(true);
 
       const response = await fetch(
-        `http://localhost:5000/api/contact/${contactId}`,
+        `https://backend-psi-rouge-29.vercel.app/api/contact/${contactId}`,
         {
           method: "DELETE",
           headers: {

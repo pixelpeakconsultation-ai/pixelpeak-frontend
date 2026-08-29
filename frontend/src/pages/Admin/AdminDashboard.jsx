@@ -32,11 +32,11 @@ function AdminDashboard() {
 
       const [contactsResponse, reviewsResponse] =
         await Promise.all([
-          fetch("http://localhost:5000/api/contact", {
+          fetch("https://backend-psi-rouge-29.vercel.app/api/contact", {
             headers,
           }),
 
-          fetch("http://localhost:5000/api/reviews/admin", {
+          fetch("https://backend-psi-rouge-29.vercel.app/api/reviews/admin", {
             headers,
           }),
         ]);
