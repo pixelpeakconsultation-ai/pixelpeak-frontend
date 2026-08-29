@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 // Main Pages
 import Home from "../pages/Home/Home";
@@ -59,9 +59,14 @@ function AppRoutes() {
       ========================================== */}
 
       <Route
-        path="/admin/login"
-        element={<AdminLogin />}
-      />
+  path="/admin"
+  element={<Navigate to="/admin/login" replace />}
+/>
+
+<Route
+  path="/admin/login"
+  element={<AdminLogin />}
+/>
 
 
       {/* ==========================================
