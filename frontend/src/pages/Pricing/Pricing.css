@@ -1070,36 +1070,1447 @@
 }
 
 
-/* ==========================================
-   MOBILE
-========================================== */
+/* =========================================================
+   PIXELPEAK PRICING PAGE
+   FULL MOBILE RESPONSIVE OVERRIDES
+   ========================================================= */
 
-@media (max-width: 768px) {
-  .primary-btn {
-    min-width: 210px;
+/* =========================================================
+   GLOBAL SAFETY
+   ========================================================= */
 
-    height: 50px;
+.pricing-page,
+.pricing-page * {
+  box-sizing: border-box;
+}
 
-    padding: 0 22px;
+.pricing-page {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
-    font-size: 15px;
-  }
+.pricing-page img,
+.pricing-page svg {
+  max-width: 100%;
+}
+
+.pricing-container {
+  width: 90%;
+  max-width: 1350px;
+  margin: 0 auto;
 }
 
 
-/* ==========================================
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.pricing-hero {
+  width: 100%;
+  overflow: hidden;
+}
+
+.pricing-hero-content {
+  width: 100%;
+  max-width: 850px;
+}
+
+.pricing-hero h1 {
+  overflow-wrap: break-word;
+}
+
+.pricing-hero p {
+  max-width: 800px;
+  overflow-wrap: break-word;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+   ========================================================= */
+
+.pricing-hero-buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  width: 100%;
+  max-width: 100%;
+}
+
+.pricing-hero-buttons .primary-btn,
+.pricing-secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  max-width: 100%;
+  box-sizing: border-box;
+
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.pricing-hero-buttons .primary-btn svg {
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   WEBSITE PRICING
+   ========================================================= */
+
+.website-pricing {
+  width: 100%;
+  overflow: hidden;
+}
+
+.pricing-section-heading {
+  width: 100%;
+  max-width: 850px;
+}
+
+.pricing-section-heading h2,
+.pricing-section-heading p {
+  overflow-wrap: break-word;
+}
+
+.website-pricing-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.website-price-card {
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.price-card-top {
+  min-width: 0;
+}
+
+.price-card-top h3,
+.price-card-top p {
+  overflow-wrap: break-word;
+}
+
+.price {
+  min-width: 0;
+}
+
+.price strong {
+  overflow-wrap: break-word;
+}
+
+.price-features {
+  width: 100%;
+  min-width: 0;
+}
+
+.price-features li {
+  min-width: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.price-features li span {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.price-features li svg {
+  flex-shrink: 0;
+}
+
+.price-card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  width: 100%;
+  max-width: 100%;
+
+  margin-top: auto;
+
+  box-sizing: border-box;
+
+  text-decoration: none;
+
+  white-space: normal;
+  text-align: center;
+}
+
+.price-card-btn svg {
+  flex-shrink: 0;
+}
+
+.pricing-note {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+
+/* =========================================================
+   MARKETING PRICING
+   ========================================================= */
+
+.marketing-pricing {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marketing-pricing-grid {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 24px;
+}
+
+.marketing-card {
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+}
+
+.marketing-card h3,
+.marketing-description {
+  overflow-wrap: break-word;
+}
+
+.marketing-card ul {
+  width: 100%;
+  min-width: 0;
+}
+
+.marketing-card li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  min-width: 0;
+}
+
+.marketing-card li span {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.marketing-card li svg {
+  flex-shrink: 0;
+}
+
+.marketing-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  width: 100%;
+  max-width: 100%;
+
+  margin-top: auto;
+
+  box-sizing: border-box;
+
+  text-decoration: none;
+
+  text-align: center;
+  white-space: normal;
+}
+
+.marketing-btn svg {
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   GROWTH SECTION
+   ========================================================= */
+
+.growth-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.growth-card {
+  width: 100%;
+  max-width: 100%;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(260px, 1fr);
+
+  gap: 40px;
+
+  overflow: hidden;
+}
+
+.growth-content {
+  min-width: 0;
+}
+
+.growth-content h2,
+.growth-content p {
+  overflow-wrap: break-word;
+}
+
+.growth-content .primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  max-width: 100%;
+
+  text-decoration: none;
+
+  white-space: normal;
+  text-align: center;
+}
+
+.growth-content .primary-btn svg {
+  flex-shrink: 0;
+}
+
+.growth-services {
+  min-width: 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 15px;
+}
+
+.growth-services > div {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+}
+
+.growth-services span {
+  overflow-wrap: break-word;
+}
+
+.growth-services svg {
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   CUSTOM PRICING
+   ========================================================= */
+
+.custom-pricing {
+  width: 100%;
+  overflow: hidden;
+}
+
+.custom-card {
+  width: 100%;
+  max-width: 100%;
+
+  display: grid;
+  grid-template-columns: 100px minmax(0, 1fr);
+
+  gap: 30px;
+
+  overflow: hidden;
+}
+
+.custom-icon {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-content {
+  min-width: 0;
+}
+
+.custom-content h2,
+.custom-content p {
+  overflow-wrap: break-word;
+}
+
+.pricing-primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  max-width: 100%;
+
+  box-sizing: border-box;
+
+  text-decoration: none;
+
+  white-space: normal;
+  text-align: center;
+}
+
+.pricing-primary-btn svg {
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+
+.pricing-faq {
+  width: 100%;
+  overflow: hidden;
+}
+
+.pricing-faq-list {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.pricing-faq-item {
+  width: 100%;
+  max-width: 100%;
+
+  overflow: hidden;
+}
+
+.pricing-faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  cursor: pointer;
+
+  min-width: 0;
+}
+
+.pricing-faq-item summary > span {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  overflow-wrap: break-word;
+}
+
+.pricing-faq-item summary > span svg {
+  flex-shrink: 0;
+}
+
+.pricing-faq-item summary b {
+  flex-shrink: 0;
+}
+
+.pricing-faq-item p {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+
+/* =========================================================
+   LARGE TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .pricing-container {
+    width: 94%;
+  }
+
+  .website-pricing-grid,
+  .marketing-pricing-grid {
+    gap: 18px;
+  }
+
+  .growth-card {
+    grid-template-columns: minmax(0, 1.3fr) minmax(220px, 1fr);
+    gap: 25px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+  .pricing-container {
+    width: 92%;
+  }
+
+  /* ------------------------------------------
+     Hero
+  ------------------------------------------ */
+
+  .pricing-hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .pricing-hero-buttons {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  /* ------------------------------------------
+     Website Cards
+  ------------------------------------------ */
+
+  .website-pricing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* ------------------------------------------
+     Marketing Cards
+  ------------------------------------------ */
+
+  .marketing-pricing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* ------------------------------------------
+     Growth
+  ------------------------------------------ */
+
+  .growth-card {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .growth-content {
+    width: 100%;
+  }
+
+  .growth-services {
+    width: 100%;
+  }
+
+  /* ------------------------------------------
+     Custom
+  ------------------------------------------ */
+
+  .custom-card {
+    grid-template-columns: 80px minmax(0, 1fr);
+    gap: 25px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .pricing-container {
+    width: 92%;
+  }
+
+
+  /* ==========================================
+     HERO
+  ========================================== */
+
+  .pricing-hero {
+    width: 100%;
+  }
+
+  .pricing-hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .pricing-hero h1 {
+    font-size: clamp(32px, 8vw, 48px);
+    line-height: 1.15;
+  }
+
+  .pricing-hero p {
+    width: 100%;
+    max-width: 100%;
+
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+
+  /* ==========================================
+     HERO BUTTONS
+  ========================================== */
+
+  .pricing-hero-buttons {
+    width: 100%;
+
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 12px;
+  }
+
+  .pricing-hero-buttons .primary-btn,
+  .pricing-secondary-btn {
+    width: 100%;
+    max-width: 100%;
+
+    min-height: 48px;
+
+    padding: 12px 16px;
+
+    border-radius: 12px;
+
+    font-size: 14px;
+
+    white-space: normal;
+    text-align: center;
+  }
+
+
+  /* ==========================================
+     SECTION HEADINGS
+  ========================================== */
+
+  .pricing-section-heading {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .pricing-section-heading h2 {
+    font-size: clamp(28px, 7vw, 40px);
+    line-height: 1.2;
+  }
+
+  .pricing-section-heading p {
+    width: 100%;
+    max-width: 100%;
+
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+
+  /* ==========================================
+     WEBSITE PRICING
+  ========================================== */
+
+  .website-pricing-grid {
+    width: 100%;
+
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .website-price-card {
+    width: 100%;
+    max-width: 100%;
+
+    padding: 24px 20px;
+  }
+
+  .popular-badge {
+    max-width: 100%;
+
+    font-size: 10px;
+
+    white-space: normal;
+    text-align: center;
+  }
+
+  .price-card-top h3 {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  .price-card-top p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .price {
+    width: 100%;
+  }
+
+  .price strong {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .price-features {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .price-features li {
+    gap: 9px;
+
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .price-card-btn {
+    width: 100%;
+
+    min-height: 48px;
+
+    margin-top: 22px;
+
+    padding: 12px 16px;
+
+    border-radius: 11px;
+
+    font-size: 14px;
+  }
+
+  .pricing-note {
+    font-size: 11px;
+    line-height: 1.6;
+
+    margin-top: 18px;
+  }
+
+
+  /* ==========================================
+     MARKETING PRICING
+  ========================================== */
+
+  .marketing-pricing-grid {
+    width: 100%;
+
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .marketing-card {
+    width: 100%;
+    max-width: 100%;
+
+    padding: 24px 20px;
+  }
+
+  .marketing-icon {
+    flex-shrink: 0;
+  }
+
+  .marketing-card h3 {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  .marketing-price {
+    font-size: 26px;
+  }
+
+  .marketing-description {
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .marketing-card ul {
+    margin-top: 18px;
+  }
+
+  .marketing-card li {
+    gap: 9px;
+
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .marketing-btn {
+    width: 100%;
+
+    min-height: 48px;
+
+    margin-top: 22px;
+
+    padding: 12px 16px;
+
+    border-radius: 11px;
+
+    font-size: 14px;
+  }
+
+
+  /* ==========================================
+     GROWTH SECTION
+  ========================================== */
+
+  .growth-card {
+    width: 100%;
+    max-width: 100%;
+
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+
+    padding: 28px 20px;
+  }
+
+  .growth-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .growth-content h2 {
+    font-size: clamp(27px, 7vw, 38px);
+    line-height: 1.2;
+  }
+
+  .growth-content p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .growth-content .primary-btn {
+    width: 100%;
+    max-width: 100%;
+
+    min-height: 48px;
+
+    margin-top: 18px;
+
+    padding: 12px 16px;
+
+    border-radius: 11px;
+
+    font-size: 14px;
+  }
+
+  .growth-services {
+    width: 100%;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+  }
+
+  .growth-services > div {
+    min-height: 65px;
+
+    padding: 12px 8px;
+
+    gap: 7px;
+
+    border-radius: 10px;
+  }
+
+  .growth-services span {
+    font-size: 12px;
+  }
+
+
+  /* ==========================================
+     CUSTOM PRICING
+  ========================================== */
+
+  .custom-card {
+    width: 100%;
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    padding: 28px 20px;
+  }
+
+  .custom-icon {
+    width: 58px;
+    height: 58px;
+  }
+
+  .custom-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .custom-content h2 {
+    font-size: clamp(27px, 7vw, 38px);
+    line-height: 1.2;
+  }
+
+  .custom-content p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .pricing-primary-btn {
+    width: 100%;
+    max-width: 100%;
+
+    min-height: 48px;
+
+    margin-top: 18px;
+
+    padding: 12px 16px;
+
+    border-radius: 11px;
+
+    font-size: 14px;
+  }
+
+
+  /* ==========================================
+     FAQ
+  ========================================== */
+
+  .pricing-faq-list {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .pricing-faq-item {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .pricing-faq-item summary {
+    gap: 12px;
+
+    padding: 16px 0;
+
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .pricing-faq-item summary > span {
+    gap: 8px;
+  }
+
+  .pricing-faq-item summary > span svg {
+    flex-shrink: 0;
+  }
+
+  .pricing-faq-item summary b {
+    font-size: 20px;
+  }
+
+  .pricing-faq-item p {
+    font-size: 13px;
+    line-height: 1.65;
+
+    padding-bottom: 16px;
+  }
+
+}
+
+
+/* =========================================================
    SMALL MOBILE
-========================================== */
+   ========================================================= */
 
 @media (max-width: 480px) {
-  .primary-btn {
-    width: 100%;
-    max-width: 300px;
 
-    min-width: 0;
-
-    height: 50px;
-
-    font-size: 15px;
+  .pricing-container {
+    width: 92%;
   }
+
+
+  /* ------------------------------------------
+     Hero
+  ------------------------------------------ */
+
+  .pricing-hero h1 {
+    font-size: 32px;
+  }
+
+  .pricing-hero p {
+    font-size: 13px;
+  }
+
+
+  /* ------------------------------------------
+     Hero Buttons
+  ------------------------------------------ */
+
+  .pricing-hero-buttons {
+    gap: 10px;
+  }
+
+  .pricing-hero-buttons .primary-btn,
+  .pricing-secondary-btn {
+    width: 100%;
+
+    min-height: 46px;
+
+    padding: 11px 14px;
+
+    border-radius: 10px;
+
+    font-size: 13px;
+  }
+
+
+  /* ------------------------------------------
+     Section Headings
+  ------------------------------------------ */
+
+  .pricing-section-heading h2 {
+    font-size: 29px;
+  }
+
+  .pricing-section-heading p {
+    font-size: 13px;
+  }
+
+
+  /* ------------------------------------------
+     Website Cards
+  ------------------------------------------ */
+
+  .website-pricing-grid {
+    gap: 16px;
+  }
+
+  .website-price-card {
+    padding: 22px 17px;
+    border-radius: 14px;
+  }
+
+  .price-card-top h3 {
+    font-size: 20px;
+  }
+
+  .price-card-top p {
+    font-size: 12px;
+  }
+
+  .price strong {
+    font-size: 26px;
+  }
+
+  .price-features li {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .price-card-btn {
+    min-height: 46px;
+
+    margin-top: 18px;
+
+    padding: 11px 14px;
+
+    font-size: 13px;
+  }
+
+
+  /* ------------------------------------------
+     Marketing Cards
+  ------------------------------------------ */
+
+  .marketing-pricing-grid {
+    gap: 16px;
+  }
+
+  .marketing-card {
+    padding: 22px 17px;
+    border-radius: 14px;
+  }
+
+  .marketing-card h3 {
+    font-size: 20px;
+  }
+
+  .marketing-price {
+    font-size: 24px;
+  }
+
+  .marketing-description {
+    font-size: 12px;
+  }
+
+  .marketing-card li {
+    font-size: 12px;
+  }
+
+  .marketing-btn {
+    min-height: 46px;
+
+    margin-top: 18px;
+
+    padding: 11px 14px;
+
+    font-size: 13px;
+  }
+
+
+  /* ------------------------------------------
+     Growth
+  ------------------------------------------ */
+
+  .growth-card {
+    padding: 24px 17px;
+    border-radius: 14px;
+  }
+
+  .growth-content h2 {
+    font-size: 29px;
+  }
+
+  .growth-content p {
+    font-size: 13px;
+  }
+
+  .growth-content .primary-btn {
+    min-height: 46px;
+
+    padding: 11px 14px;
+
+    font-size: 13px;
+  }
+
+  .growth-services {
+    gap: 9px;
+  }
+
+  .growth-services > div {
+    min-height: 58px;
+
+    padding: 10px 6px;
+  }
+
+  .growth-services span {
+    font-size: 11px;
+  }
+
+
+  /* ------------------------------------------
+     Custom Pricing
+  ------------------------------------------ */
+
+  .custom-card {
+    padding: 24px 17px;
+    border-radius: 14px;
+  }
+
+  .custom-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .custom-content h2 {
+    font-size: 29px;
+  }
+
+  .custom-content p {
+    font-size: 13px;
+  }
+
+  .pricing-primary-btn {
+    min-height: 46px;
+
+    padding: 11px 14px;
+
+    font-size: 13px;
+  }
+
+
+  /* ------------------------------------------
+     FAQ
+  ------------------------------------------ */
+
+  .pricing-faq-item summary {
+    font-size: 13px;
+
+    gap: 8px;
+  }
+
+  .pricing-faq-item summary b {
+    font-size: 18px;
+  }
+
+  .pricing-faq-item p {
+    font-size: 12px;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+  .pricing-container {
+    width: 94%;
+  }
+
+
+  /* ------------------------------------------
+     Hero
+  ------------------------------------------ */
+
+  .pricing-hero h1 {
+    font-size: 29px;
+  }
+
+  .pricing-hero p {
+    font-size: 12px;
+  }
+
+
+  /* ------------------------------------------
+     Buttons
+  ------------------------------------------ */
+
+  .pricing-hero-buttons .primary-btn,
+  .pricing-secondary-btn {
+    min-height: 44px;
+
+    padding: 10px 12px;
+
+    border-radius: 9px;
+
+    font-size: 12px;
+  }
+
+
+  /* ------------------------------------------
+     Headings
+  ------------------------------------------ */
+
+  .pricing-section-heading h2 {
+    font-size: 26px;
+  }
+
+
+  /* ------------------------------------------
+     Website Cards
+  ------------------------------------------ */
+
+  .website-price-card {
+    padding: 20px 14px;
+  }
+
+  .price-card-top h3 {
+    font-size: 18px;
+  }
+
+  .price strong {
+    font-size: 24px;
+  }
+
+  .price-features li {
+    font-size: 11px;
+  }
+
+  .price-card-btn {
+    min-height: 44px;
+
+    padding: 10px 12px;
+
+    font-size: 12px;
+  }
+
+
+  /* ------------------------------------------
+     Marketing Cards
+  ------------------------------------------ */
+
+  .marketing-card {
+    padding: 20px 14px;
+  }
+
+  .marketing-card h3 {
+    font-size: 18px;
+  }
+
+  .marketing-price {
+    font-size: 22px;
+  }
+
+  .marketing-description {
+    font-size: 11px;
+  }
+
+  .marketing-card li {
+    font-size: 11px;
+  }
+
+  .marketing-btn {
+    min-height: 44px;
+
+    padding: 10px 12px;
+
+    font-size: 12px;
+  }
+
+
+  /* ------------------------------------------
+     Growth
+  ------------------------------------------ */
+
+  .growth-card {
+    padding: 21px 14px;
+  }
+
+  .growth-content h2 {
+    font-size: 26px;
+  }
+
+  .growth-content p {
+    font-size: 12px;
+  }
+
+  .growth-content .primary-btn {
+    min-height: 44px;
+
+    padding: 10px 12px;
+
+    font-size: 12px;
+  }
+
+  .growth-services > div {
+    min-height: 54px;
+
+    padding: 8px 5px;
+  }
+
+  .growth-services span {
+    font-size: 10px;
+  }
+
+
+  /* ------------------------------------------
+     Custom
+  ------------------------------------------ */
+
+  .custom-card {
+    padding: 21px 14px;
+  }
+
+  .custom-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .custom-content h2 {
+    font-size: 26px;
+  }
+
+  .custom-content p {
+    font-size: 12px;
+  }
+
+  .pricing-primary-btn {
+    min-height: 44px;
+
+    padding: 10px 12px;
+
+    font-size: 12px;
+  }
+
+
+  /* ------------------------------------------
+     FAQ
+  ------------------------------------------ */
+
+  .pricing-faq-item summary {
+    font-size: 12px;
+  }
+
+  .pricing-faq-item p {
+    font-size: 11px;
+  }
+
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+   ========================================================= */
+
+@media (hover: none) and (pointer: coarse) {
+
+  .pricing-page a,
+  .pricing-page button,
+  .pricing-page summary {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .pricing-page a {
+    touch-action: manipulation;
+  }
+
+}
+
+
+/* =========================================================
+   FINAL OVERFLOW PROTECTION
+   ========================================================= */
+
+.pricing-page,
+.pricing-page section,
+.pricing-container,
+.website-pricing-grid,
+.marketing-pricing-grid,
+.website-price-card,
+.marketing-card,
+.growth-card,
+.custom-card,
+.pricing-faq-list {
+  max-width: 100%;
+}
+
+.pricing-page h1,
+.pricing-page h2,
+.pricing-page h3,
+.pricing-page p,
+.pricing-page span,
+.pricing-page li {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+
+
+/* ==========================================
+   PREVENT HORIZONTAL OVERFLOW
+========================================== */
+
+.pricing-hero-buttons,
+.pricing-hero-buttons .primary-btn,
+.pricing-secondary-btn {
+  box-sizing: border-box;
+  max-width: 100%;
 }

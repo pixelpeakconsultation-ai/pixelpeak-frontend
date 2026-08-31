@@ -529,9 +529,9 @@ function Blog3() {
                 goals.
               </p>
 
-              <Link to="/contact">
-                Talk to PixelPeak →
-              </Link>
+              <Link to="/contact" className="talk-pixelpeak-btn">
+  Talk to PixelPeak →
+</Link>
 
             </div>
 
@@ -581,9 +581,9 @@ function Blog3() {
                 goals.
               </p>
 
-              <Link to="/contact">
-                Contact Us →
-              </Link>
+              <Link to="/contact" className="start-growing-btn">
+  Start Growing →
+</Link>
 
             </div>
 

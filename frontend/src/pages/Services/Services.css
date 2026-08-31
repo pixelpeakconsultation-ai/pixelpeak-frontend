@@ -3258,3 +3258,439 @@
     width: 100%;
   }
 }
+
+/* ==========================================
+   FEATURE BUTTON
+========================================== */
+
+.feature-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  max-width: 100%;
+
+  text-decoration: none;
+  white-space: nowrap;
+
+  gap: 10px;
+
+  transition: all 0.3s ease;
+}
+
+.feature-btn svg {
+  flex-shrink: 0;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 700px) {
+  .feature-btn {
+    width: 100%;
+    max-width: 100%;
+
+    min-height: 48px;
+
+    padding: 12px 18px;
+
+    gap: 8px;
+
+    font-size: 15px;
+
+    border-radius: 12px;
+
+    white-space: normal;
+    text-align: center;
+  }
+
+  .feature-btn svg {
+    font-size: 14px;
+  }
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+  .feature-btn {
+    width: 100%;
+
+    min-height: 46px;
+
+    padding: 11px 14px;
+
+    gap: 7px;
+
+    font-size: 14px;
+
+    border-radius: 12px;
+  }
+
+  .feature-btn svg {
+    font-size: 13px;
+  }
+}
+
+/* ==========================================
+   VERY SMALL PHONES
+========================================== */
+
+@media (max-width: 360px) {
+  .feature-btn {
+    min-height: 44px;
+
+    padding: 10px 12px;
+
+    gap: 6px;
+
+    font-size: 13px;
+  }
+
+  .feature-btn svg {
+    font-size: 12px;
+  }
+}
+
+/* ==========================================
+   MARKETING CARD
+========================================== */
+
+.marketing-card {
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.marketing-card * {
+  box-sizing: border-box;
+}
+
+.marketing-card p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.marketing-card a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  max-width: 100%;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+}
+
+.marketing-card a svg {
+  flex-shrink: 0;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 700px) {
+  .marketing-card {
+    width: 100%;
+    max-width: 100%;
+
+    padding: 24px 20px;
+
+    border-radius: 16px;
+  }
+
+  .marketing-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+  }
+
+  .marketing-card span {
+    display: block;
+
+    margin-top: 16px;
+
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+
+  .marketing-card h3 {
+    margin-top: 10px;
+
+    font-size: 22px;
+    line-height: 1.3;
+
+    overflow-wrap: break-word;
+  }
+
+  .marketing-card p {
+    margin-top: 12px;
+
+    font-size: 14px;
+    line-height: 1.65;
+
+    max-width: 100%;
+  }
+
+  .marketing-card a {
+    width: 100%;
+
+    min-height: 46px;
+
+    margin-top: 20px;
+    padding: 11px 16px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    white-space: normal;
+    text-align: center;
+  }
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+  .marketing-card {
+    padding: 22px 17px;
+
+    border-radius: 14px;
+  }
+
+  .marketing-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .marketing-card span {
+    margin-top: 14px;
+
+    font-size: 10px;
+  }
+
+  .marketing-card h3 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  .marketing-card p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .marketing-card a {
+    min-height: 44px;
+
+    margin-top: 18px;
+    padding: 10px 14px;
+
+    font-size: 13px;
+  }
+}
+
+/* ==========================================
+   VERY SMALL PHONES
+========================================== */
+
+@media (max-width: 360px) {
+  .marketing-card {
+    padding: 20px 14px;
+  }
+
+  .marketing-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .marketing-card h3 {
+    font-size: 18px;
+  }
+
+  .marketing-card p {
+    font-size: 12px;
+  }
+
+  .marketing-card a {
+    width: 100%;
+
+    min-height: 42px;
+
+    font-size: 12px;
+  }
+}
+
+/* ==========================================
+   PREVENT HORIZONTAL OVERFLOW
+========================================== */
+
+.marketing-card,
+.marketing-card a,
+.marketing-card h3,
+.marketing-card p {
+  max-width: 100%;
+}
+
+/* ==========================================
+   CTA BUTTONS
+========================================== */
+
+.cta-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  width: 100%;
+}
+
+.services-primary-btn,
+.services-secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  text-decoration: none;
+  white-space: nowrap;
+
+  transition: all 0.3s ease;
+}
+
+.services-primary-btn {
+  gap: 10px;
+}
+
+.services-primary-btn svg {
+  flex-shrink: 0;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 700px) {
+
+  .cta-buttons {
+    width: 100%;
+
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 12px;
+  }
+
+  .services-primary-btn,
+  .services-secondary-btn {
+    width: 100%;
+    max-width: 100%;
+
+    min-height: 48px;
+
+    padding: 12px 18px;
+
+    border-radius: 12px;
+
+    font-size: 15px;
+
+    white-space: normal;
+    text-align: center;
+  }
+
+  .services-primary-btn {
+    gap: 8px;
+  }
+
+  .services-primary-btn svg {
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+  .cta-buttons {
+    gap: 10px;
+  }
+
+  .services-primary-btn,
+  .services-secondary-btn {
+    width: 100%;
+
+    min-height: 46px;
+
+    padding: 11px 14px;
+
+    font-size: 14px;
+
+    border-radius: 11px;
+  }
+
+  .services-primary-btn {
+    gap: 7px;
+  }
+
+  .services-primary-btn svg {
+    font-size: 13px;
+  }
+}
+
+/* ==========================================
+   VERY SMALL PHONES
+========================================== */
+
+@media (max-width: 360px) {
+
+  .cta-buttons {
+    gap: 9px;
+  }
+
+  .services-primary-btn,
+  .services-secondary-btn {
+    min-height: 44px;
+
+    padding: 10px 12px;
+
+    font-size: 13px;
+
+    border-radius: 10px;
+  }
+
+  .services-primary-btn {
+    gap: 6px;
+  }
+
+  .services-primary-btn svg {
+    font-size: 12px;
+  }
+}
+
+/* ==========================================
+   PREVENT HORIZONTAL OVERFLOW
+========================================== */
+
+.cta-buttons,
+.services-primary-btn,
+.services-secondary-btn {
+  max-width: 100%;
+  box-sizing: border-box;
+}

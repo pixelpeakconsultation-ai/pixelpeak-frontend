@@ -594,7 +594,7 @@ function Blog4() {
                 and digital marketing systems designed for growth.
               </p>
 
-              <Link to="/contact">
+              <Link to="/contact" className="talk-pixelpeak-btn">
                 Talk to PixelPeak →
               </Link>
 
@@ -684,7 +684,7 @@ function Blog4() {
               audience.
             </p>
 
-            <Link to="/contact">
+            <Link to="/contact" className="start-growing-btn">
               Start Growing →
             </Link>
 

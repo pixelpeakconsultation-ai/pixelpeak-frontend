@@ -595,7 +595,7 @@ function Blog5() {
                 business goals.
               </p>
 
-              <Link to="/contact">
+              <Link to="/contact" className="talk-pixelpeak-btn">
                 Talk to PixelPeak →
               </Link>
 
@@ -684,7 +684,7 @@ function Blog5() {
               to put your business in front of the right customers.
             </p>
 
-            <Link to="/contact">
+            <Link to="/contact" className="start-growing-btn">
               Start Your Campaign →
             </Link>
 

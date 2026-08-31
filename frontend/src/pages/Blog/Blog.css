@@ -1487,3 +1487,187 @@
     width: 100%;
   }
 }
+
+/* ==========================================
+   BLOG HERO BUTTONS
+========================================== */
+
+.blog-hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.blog-primary-btn,
+.blog-secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0 26px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+/* Primary */
+.blog-primary-btn {
+  background: #2563eb;
+  color: #ffffff;
+  border: 1px solid #2563eb;
+}
+
+.blog-primary-btn:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+/* Secondary */
+.blog-secondary-btn {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #38bdf8;
+}
+
+.blog-secondary-btn:hover {
+  background: #38bdf8;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.25);
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 768px) {
+
+  .blog-hero-buttons {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .blog-primary-btn,
+  .blog-secondary-btn {
+    min-height: 48px;
+    padding: 0 22px;
+    font-size: 14px;
+  }
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+  .blog-hero-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .blog-primary-btn,
+  .blog-secondary-btn {
+    width: 100%;
+    min-height: 50px;
+    padding: 0 18px;
+    font-size: 15px;
+    border-radius: 12px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .blog-primary-btn:hover,
+  .blog-secondary-btn:hover {
+    transform: none;
+  }
+}
+
+
+/* ==========================================
+   SMALL PHONES
+========================================== */
+
+@media (max-width: 480px) {
+
+  .blog-hero-buttons {
+    gap: 10px;
+  }
+
+  .blog-primary-btn,
+  .blog-secondary-btn {
+    width: 100%;
+    min-height: 48px;
+    padding: 0 16px;
+    font-size: 14px;
+    border-radius: 11px;
+  }
+}
+
+
+/* ==========================================
+   VERY SMALL PHONES
+========================================== */
+
+@media (max-width: 360px) {
+
+  .blog-primary-btn,
+  .blog-secondary-btn {
+    min-height: 46px;
+    padding: 0 14px;
+    font-size: 13px;
+  }
+}
+
+/* ==========================================
+   BLOG PRIMARY BUTTON — MOBILE FIX
+========================================== */
+
+@media (max-width: 600px) {
+  .blog-primary-btn {
+    width: 100%;
+    max-width: 100%;
+    min-height: 50px;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: break-word;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-primary-btn {
+    width: 100%;
+    min-height: 48px;
+    padding: 11px 16px;
+    font-size: 14px;
+    border-radius: 11px;
+  }
+}
+
+@media (max-width: 360px) {
+  .blog-primary-btn {
+    width: 100%;
+    min-height: 46px;
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+}

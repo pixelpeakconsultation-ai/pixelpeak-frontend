@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-
 import Logo from "../../../assets/images/logo.png";
 
 function Navbar() {
@@ -43,7 +42,6 @@ function Navbar() {
         >
 
           {/* Home */}
-
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -57,7 +55,6 @@ function Navbar() {
 
 
           {/* About */}
-
           <NavLink
             to="/about"
             className={({ isActive }) =>
@@ -70,7 +67,6 @@ function Navbar() {
 
 
           {/* Services */}
-
           <NavLink
             to="/services"
             className={({ isActive }) =>
@@ -83,7 +79,6 @@ function Navbar() {
 
 
           {/* Portfolio */}
-
           <NavLink
             to="/portfolio"
             className={({ isActive }) =>
@@ -96,7 +91,6 @@ function Navbar() {
 
 
           {/* Pricing */}
-
           <NavLink
             to="/pricing"
             className={({ isActive }) =>
@@ -109,7 +103,6 @@ function Navbar() {
 
 
           {/* Blog */}
-
           <NavLink
             to="/blog"
             className={({ isActive }) =>
@@ -122,7 +115,6 @@ function Navbar() {
 
 
           {/* Contact */}
-
           <NavLink
             to="/contact"
             className={({ isActive }) =>
@@ -133,18 +125,33 @@ function Navbar() {
             Contact
           </NavLink>
 
+
+          {/* ==========================================
+              MOBILE CONSULTATION BUTTON
+          ========================================== */}
+
+          <a
+            href="https://calendar.app.google/NeEae2sdgGubo1fZ6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mobile-consult"
+            onClick={closeMenu}
+          >
+            Book Free Consultation
+          </a>
+
         </div>
 
 
         {/* ==========================================
-            DESKTOP CTA
+            DESKTOP CONSULTATION BUTTON
         ========================================== */}
 
         <a
           href="https://calendar.app.google/NeEae2sdgGubo1fZ6"
           target="_blank"
           rel="noopener noreferrer"
-          className="primary-btn"
+          className="primary-btn desktop-consult"
         >
           Book Free Consultation
         </a>
@@ -160,7 +167,11 @@ function Navbar() {
             menuOpen ? "open" : ""
           }`}
           onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle navigation menu"
+          aria-label={
+            menuOpen
+              ? "Close navigation menu"
+              : "Open navigation menu"
+          }
           aria-expanded={menuOpen}
         >
           <span></span>

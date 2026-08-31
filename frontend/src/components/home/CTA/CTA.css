@@ -168,15 +168,128 @@
    BUTTONS
 ========================================== */
 
+/* ==========================================
+   CTA BUTTONS
+========================================== */
+
 .cta-buttons {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 
+  width: 100%;
+  max-width: 100%;
+}
+
+/* ==========================================
+   CTA PRIMARY BUTTON
+========================================== */
+
+.cta-primary-button,
+.cta-buttons .primary-btn {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  gap: 15px;
+  box-sizing: border-box;
 
-  margin-top: 32px;
+  min-height: 50px;
+  padding: 13px 24px;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+  white-space: nowrap;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+/* Arrow */
+.cta-primary-button span {
+  margin-left: 8px;
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 700px) {
+
+  .cta-buttons {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cta-primary-button,
+  .cta-buttons .primary-btn {
+    width: 100%;
+    max-width: 100%;
+
+    min-height: 48px;
+
+    padding: 12px 18px;
+
+    border-radius: 12px;
+
+    font-size: 15px;
+
+    white-space: normal;
+    text-align: center;
+  }
+
+  .cta-primary-button span {
+    margin-left: 7px;
+  }
+}
+
+/* ==========================================
+   SMALL PHONES
+========================================== */
+
+@media (max-width: 480px) {
+
+  .cta-buttons {
+    gap: 10px;
+  }
+
+  .cta-primary-button,
+  .cta-buttons .primary-btn {
+    min-height: 46px;
+    padding: 11px 14px;
+
+    font-size: 14px;
+  }
+}
+
+/* ==========================================
+   VERY SMALL PHONES
+========================================== */
+
+@media (max-width: 360px) {
+
+  .cta-buttons {
+    gap: 9px;
+  }
+
+  .cta-primary-button,
+  .cta-buttons .primary-btn {
+    min-height: 44px;
+    padding: 10px 12px;
+
+    font-size: 13px;
+  }
 }
 
 

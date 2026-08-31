@@ -668,9 +668,9 @@ function Blog6() {
                 engagement, leads, and long-term growth.
               </p>
 
-              <Link to="/contact">
-                Talk to PixelPeak →
-              </Link>
+              <Link to="/contact" className="talk-pixelpeak-btn">
+  Talk to PixelPeak →
+</Link>
 
             </div>
 
@@ -757,9 +757,9 @@ function Blog6() {
               digital growth channel.
             </p>
 
-            <Link to="/contact">
-              Start Growing →
-            </Link>
+            <Link to="/contact" className="start-growing-btn">
+  Start Growing →
+</Link>
 
           </div>
 
