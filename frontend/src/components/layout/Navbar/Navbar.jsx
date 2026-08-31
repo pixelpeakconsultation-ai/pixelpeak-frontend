@@ -126,19 +126,7 @@ function Navbar() {
           </NavLink>
 
 
-          {/* ==========================================
-              MOBILE CONSULTATION BUTTON
-          ========================================== */}
-
-          <a
-            href="https://calendar.app.google/NeEae2sdgGubo1fZ6"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mobile-consult"
-            onClick={closeMenu}
-          >
-            Book Free Consultation
-          </a>
+          
 
         </div>
 
