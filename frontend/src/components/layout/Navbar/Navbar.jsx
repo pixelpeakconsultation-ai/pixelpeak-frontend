@@ -128,6 +128,7 @@ function Navbar() {
 
           {/* ==========================================
               MOBILE CONSULTATION BUTTON
+              Only appears when hamburger menu is open
           ========================================== */}
 
           <a
@@ -145,6 +146,7 @@ function Navbar() {
 
         {/* ==========================================
             DESKTOP CONSULTATION BUTTON
+            Only appears on desktop
         ========================================== */}
 
         <a

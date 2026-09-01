@@ -711,3 +711,66 @@
   }
 
 }
+
+@media (max-width: 850px) {
+
+  .desktop-consult {
+    display: none !important;
+  }
+
+  .nav-links .mobile-consult {
+    display: flex !important;
+    width: 100%;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 0 20px;
+    border-radius: 12px;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+
+}
+
+/* ==========================================
+   CONSULTATION BUTTON VISIBILITY
+========================================== */
+
+/* Mobile button hidden on desktop */
+.nav-links .mobile-consult {
+  display: none !important;
+}
+
+/* Desktop button visible on desktop */
+.desktop-consult {
+  display: inline-flex !important;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 850px) {
+
+  /* Hide desktop consultation button */
+  .desktop-consult {
+    display: none !important;
+  }
+
+  /* Mobile consultation appears inside menu */
+  .nav-links .mobile-consult {
+    display: flex !important;
+    width: 100%;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    font-size: 15px;
+  }
+
+}
