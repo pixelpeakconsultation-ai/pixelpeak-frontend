@@ -9,7 +9,7 @@ import {
   FaHandshake,
   FaCode,
 } from "react-icons/fa";
-
+import SEO from "../../components/common/SEO/SEO";
 import "./About.css";
 
 function About() {
@@ -88,7 +88,16 @@ function About() {
   ];
 
   return (
+  <>
+    <SEO
+      title="About PixelPeak | Digital Growth Agency"
+      description="Learn about PixelPeak, a digital marketing agency helping startups and businesses grow through website development, SEO, advertising, social media, and digital strategy."
+      canonical="https://YOUR-DOMAIN.com/about"
+      keywords="about PixelPeak, digital marketing agency, digital growth agency, web development, SEO services, social media marketing, paid advertising, digital strategy"
+    />
+
     <main className="about-page">
+      
       {/* ==========================================
           Hero
       ========================================== */}
@@ -384,7 +393,8 @@ function About() {
           </div>
         </div>
       </section>
-    </main>
+        </main>
+  </>
   );
 }
 

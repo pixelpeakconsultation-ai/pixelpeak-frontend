@@ -15,7 +15,7 @@ import {
   FaRocket,
   FaChartBar,
 } from "react-icons/fa";
-
+import SEO from "../../components/common/SEO/SEO";
 import "./Services.css";
 
 function Services() {
@@ -139,6 +139,14 @@ function Services() {
   ];
 
   return (
+  <>
+    <SEO
+      title="Digital Marketing & Web Development Services"
+      description="PixelPeak provides professional website development, SEO, Google Ads, Meta Ads, social media marketing, and digital growth strategy to help Canadian businesses grow online."
+      canonical="https://YOUR-DOMAIN.com/services"
+      keywords="digital marketing services, web development services, SEO services, Google Ads, Meta Ads, social media marketing, digital growth strategy, website development, Canadian digital marketing agency"
+    />
+
     <main className="services-page">
       {/* =========================================================
           HERO
@@ -716,8 +724,9 @@ function Services() {
           </div>
         </div>
       </section>
-    </main>
-  );
+        </main>
+  </>
+);
 }
 
 export default Services;

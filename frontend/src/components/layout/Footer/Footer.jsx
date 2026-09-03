@@ -212,12 +212,12 @@ function Footer() {
             {/* FACEBOOK */}
 
             <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-              className="follow-icon facebook"
-            >
+  href="https://www.facebook.com/share/1JsBkrrFaP/"
+  className="social-facebook"
+  aria-label="Facebook"
+  target="_blank"
+  rel="noopener noreferrer"
+>
               <FaFacebookF />
             </a>
 
@@ -225,12 +225,12 @@ function Footer() {
             {/* INSTAGRAM */}
 
             <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="follow-icon instagram"
-            >
+  href="https://www.instagram.com/pixelpeak_marketing/"
+  className="social-instagram"
+  aria-label="Instagram"
+  target="_blank"
+  rel="noopener noreferrer"
+>
               <FaInstagram />
             </a>
 
@@ -238,12 +238,12 @@ function Footer() {
             {/* TIKTOK */}
 
             <a
-              href="https://www.tiktok.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="TikTok"
-              className="follow-icon tiktok"
-            >
+  href="https://www.tiktok.com/@pixel.peak00"
+  className="social-tiktok"
+  aria-label="TikTok"
+  target="_blank"
+  rel="noopener noreferrer"
+>
               <FaTiktok />
             </a>
 

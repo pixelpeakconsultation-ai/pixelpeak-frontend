@@ -1,8 +1,17 @@
 import { Link } from "react-router-dom";
+import SEO from "../../components/common/SEO/SEO";
 import "./Blog6.css";
 
 function Blog6() {
   return (
+  <>
+    <SEO
+      title="Building a Digital Strategy That Actually Works"
+      description="Learn how to build a practical digital marketing strategy around your business goals, from planning and positioning to SEO, advertising, social media, and growth."
+      canonical="https://YOUR-DOMAIN.com/blog/6"
+      keywords="digital marketing strategy, digital strategy, marketing strategy, business growth, SEO strategy, social media strategy, digital marketing planning"
+    />
+
     <main className="blog6-page">
 
       {/* ==========================================
@@ -768,6 +777,7 @@ function Blog6() {
       </section>
 
     </main>
+  </>
   );
 }
 

@@ -1,10 +1,18 @@
 import { Link } from "react-router-dom";
+import SEO from "../../components/common/SEO/SEO";
 import "./Terms.css";
 
 function Terms() {
   return (
-    <main className="legal-page">
+  <>
+    <SEO
+      title="Terms of Service"
+      description="Read PixelPeak's Terms of Service to understand the terms and conditions that apply when using our website and digital marketing services."
+      canonical="https://YOUR-DOMAIN.com/terms"
+      keywords="PixelPeak terms of service, terms and conditions, digital marketing services, website services, service agreement"
+    />
 
+    <main className="legal-page">
       {/* ==========================================
           HERO
       ========================================== */}
@@ -435,6 +443,7 @@ function Terms() {
       </section>
 
     </main>
+  </>
   );
 }
 

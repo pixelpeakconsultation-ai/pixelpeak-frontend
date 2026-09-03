@@ -1,8 +1,17 @@
 import { Link } from "react-router-dom";
+import SEO from "../../components/common/SEO/SEO";
 import "./Blog1.css";
 
 function Blog1() {
   return (
+  <>
+    <SEO
+      title="Why Your Business Needs a Professional Website"
+      description="Discover why a professional website can build trust, attract customers, generate leads, and help your business compete in today's digital marketplace."
+      canonical="https://YOUR-DOMAIN.com/blog/1"
+      keywords="professional website, business website, website development, web design, business growth, digital presence, website for small business"
+    />
+
     <main className="blog1-page">
 
       {/* ==========================================
@@ -461,6 +470,7 @@ function Blog1() {
       </section>
 
     </main>
+  </>
   );
 }
 

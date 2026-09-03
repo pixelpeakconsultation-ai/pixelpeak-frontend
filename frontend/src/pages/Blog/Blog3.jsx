@@ -1,10 +1,18 @@
 import { Link } from "react-router-dom";
+import SEO from "../../components/common/SEO/SEO";
 import "./Blog3.css";
 
 function Blog3() {
   return (
-    <main className="blog3-page">
+  <>
+    <SEO
+      title="Google Ads vs Organic Traffic: What Should You Choose?"
+      description="Compare Google Ads and organic traffic to understand which digital marketing strategy can help your business attract customers and achieve sustainable growth."
+      canonical="https://YOUR-DOMAIN.com/blog/3"
+      keywords="Google Ads, organic traffic, paid advertising, SEO, Google Ads vs SEO, digital marketing strategy, search marketing"
+    />
 
+    <main className="blog3-page">
       {/* ==========================================
           HERO
       ========================================== */}
@@ -628,6 +636,7 @@ function Blog3() {
       </section>
 
     </main>
+  </>
   );
 }
 

@@ -1,8 +1,17 @@
 import { Link } from "react-router-dom";
+import SEO from "../../components/common/SEO/SEO";
 import "./Blog2.css";
 
 function Blog2() {
   return (
+  <>
+    <SEO
+      title="How SEO Helps Local Businesses Get Found"
+      description="Learn how a strong SEO strategy can help local businesses improve search visibility, attract nearby customers, and grow their business online."
+      canonical="https://YOUR-DOMAIN.com/blog/2"
+      keywords="local SEO, SEO for local businesses, local search optimization, SEO strategy, search visibility, local business marketing, digital marketing"
+    />
+
     <main className="blog2-page">
 
       {/* ==========================================
@@ -529,6 +538,7 @@ function Blog2() {
       </section>
 
     </main>
+  </>
   );
 }
 

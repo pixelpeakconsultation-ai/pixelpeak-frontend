@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import SEO from "../../components/common/SEO/SEO";
 import "./Portfolio.css";
 
 const projects = [
@@ -237,6 +238,14 @@ function Portfolio() {
         );
 
   return (
+  <>
+    <SEO
+      title="Portfolio | Digital Marketing & Web Development"
+      description="Explore PixelPeak's portfolio of website development, e-commerce, SEO, and digital marketing projects designed to help businesses grow online."
+      canonical="https://YOUR-DOMAIN.com/portfolio"
+      keywords="digital marketing portfolio, web development portfolio, website design portfolio, SEO portfolio, e-commerce portfolio, digital marketing projects, PixelPeak portfolio"
+    />
+
     <main className="portfolio-page">
 
       {/* ==================================================
@@ -500,6 +509,7 @@ function Portfolio() {
       </section>
 
     </main>
+  </>
   );
 }
 

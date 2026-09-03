@@ -8,7 +8,7 @@ import {
   FaArrowRight,
   FaQuestionCircle,
 } from "react-icons/fa";
-
+import SEO from "../../components/common/SEO/SEO";
 import "./Pricing.css";
 
 function Pricing() {
@@ -140,6 +140,14 @@ function Pricing() {
   ];
 
   return (
+  <>
+    <SEO
+      title="Digital Marketing & Website Pricing"
+      description="Explore PixelPeak's website development, SEO, paid advertising, and social media marketing pricing plans for Canadian businesses. Choose a package or request a custom quote."
+      canonical="https://YOUR-DOMAIN.com/pricing"
+      keywords="digital marketing pricing, website development pricing, SEO pricing, Google Ads pricing, Meta Ads pricing, social media marketing pricing, web design pricing, Canadian digital marketing agency"
+    />
+
     <main className="pricing-page">
       {/* ==========================================
           Hero
@@ -457,7 +465,8 @@ function Pricing() {
           </div>
         </div>
       </section>
-    </main>
+        </main>
+  </>
   );
 }
 

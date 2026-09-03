@@ -1,8 +1,17 @@
 import { Link } from "react-router-dom";
+import SEO from "../../components/common/SEO/SEO";
 import "./Blog4.css";
 
 function Blog4() {
   return (
+  <>
+    <SEO
+      title="How Social Media Can Grow Your Brand"
+      description="Learn how a strong social media presence can build brand awareness, connect with customers, increase engagement, and turn followers into loyal clients."
+      canonical="https://YOUR-DOMAIN.com/blog/4"
+      keywords="social media marketing, social media strategy, brand growth, social media management, audience growth, digital marketing, social media for business"
+    />
+
     <main className="blog4-page">
 
       {/* ==========================================
@@ -695,6 +704,7 @@ function Blog4() {
       </section>
 
     </main>
+  </>
   );
 }
 

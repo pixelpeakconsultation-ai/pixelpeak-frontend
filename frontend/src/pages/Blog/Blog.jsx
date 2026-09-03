@@ -6,6 +6,7 @@ import {
   FaChartLine,
   FaShareAlt,
 } from "react-icons/fa";
+import SEO from "../../components/common/SEO/SEO";
 
 const blogPosts = [
   {
@@ -75,6 +76,14 @@ function Blog() {
   const latestPosts = blogPosts.slice(1);
 
   return (
+  <>
+    <SEO
+      title="Digital Marketing Blog"
+      description="Read the PixelPeak blog for practical insights on website development, SEO, Google Ads, social media marketing, digital strategy, and business growth."
+      canonical="https://YOUR-DOMAIN.com/blog"
+      keywords="digital marketing blog, SEO tips, website development, Google Ads, social media marketing, digital strategy, business growth, Canadian digital marketing"
+    />
+
     <main className="blog-page">
 
       {/* ==========================================
@@ -389,7 +398,8 @@ function Blog() {
         </div>
       </section>
 
-    </main>
+        </main>
+  </>
   );
 }
 

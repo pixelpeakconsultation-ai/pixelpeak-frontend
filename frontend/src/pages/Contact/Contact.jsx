@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import SEO from "../../components/common/SEO/SEO";
 import "./Contact.css";
 
 const Contact = () => {
@@ -52,6 +53,14 @@ const Contact = () => {
   };
 
   return (
+  <>
+    <SEO
+      title="Contact PixelPeak | Get a Free Consultation"
+      description="Contact PixelPeak to discuss website development, SEO, Google Ads, social media marketing, and digital growth solutions for your business."
+      canonical="https://YOUR-DOMAIN.com/contact"
+      keywords="contact PixelPeak, free digital marketing consultation, website development, SEO services, Google Ads, social media marketing, digital marketing agency"
+    />
+
     <main className="contact-page">
 
       {/* ==================================================
@@ -185,7 +194,7 @@ const Contact = () => {
               {/* PHONE */}
 
               <a
-  href="https://wa.me/923125037184"
+  href="https://wa.me/923007339654"
   target="_blank"
   rel="noopener noreferrer"
   className="contact-info-card"
@@ -200,7 +209,7 @@ const Contact = () => {
     </small>
 
     <h3>
-      +92 3125037184
+      +92 3007339654
     </h3>
 
     <p>
@@ -261,12 +270,12 @@ const Contact = () => {
                 ================================================== */}
 
                 <a
-                  href="#"
-                  className="social-instagram"
-                  aria-label="Instagram"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+  href="https://www.instagram.com/pixelpeak_marketing/"
+  className="social-instagram"
+  aria-label="Instagram"
+  target="_blank"
+  rel="noopener noreferrer"
+>
 
                   <svg
                     viewBox="0 0 24 24"
@@ -349,12 +358,12 @@ const Contact = () => {
                 ================================================== */}
 
                 <a
-                  href="#"
-                  className="social-tiktok"
-                  aria-label="TikTok"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+  href="https://www.tiktok.com/@pixel.peak00"
+  className="social-tiktok"
+  aria-label="TikTok"
+  target="_blank"
+  rel="noopener noreferrer"
+>
 
                   <svg
                     viewBox="0 0 24 24"
@@ -394,12 +403,12 @@ const Contact = () => {
                 ================================================== */}
 
                 <a
-                  href="#"
-                  className="social-facebook"
-                  aria-label="Facebook"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+  href="https://www.facebook.com/share/1JsBkrrFaP/"
+  className="social-facebook"
+  aria-label="Facebook"
+  target="_blank"
+  rel="noopener noreferrer"
+>
 
                   <svg
                     viewBox="0 0 24 24"
@@ -818,6 +827,7 @@ const Contact = () => {
       </section>
 
     </main>
+  </>
   );
 };
 

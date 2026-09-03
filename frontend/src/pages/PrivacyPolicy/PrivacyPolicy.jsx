@@ -1,8 +1,17 @@
 import { Link } from "react-router-dom";
+import SEO from "../../components/common/SEO/SEO";
 import "./PrivacyPolicy.css";
 
 function PrivacyPolicy() {
   return (
+  <>
+    <SEO
+      title="Privacy Policy"
+      description="Read PixelPeak's Privacy Policy to understand how we collect, use, protect, and manage information when you use our website and services."
+      canonical="https://YOUR-DOMAIN.com/privacy"
+      keywords="PixelPeak privacy policy, privacy policy, data protection, personal information, website privacy"
+    />
+
     <main className="legal-page">
 
       {/* ==========================================
@@ -336,6 +345,7 @@ function PrivacyPolicy() {
       </section>
 
     </main>
+  </>
   );
 }
 

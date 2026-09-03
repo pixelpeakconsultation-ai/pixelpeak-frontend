@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin
+Disallow: /admin/
+Disallow: /admin/login
+Disallow: /admin/dashboard
+Disallow: /admin/contacts
+Disallow: /admin/reviews
+
+Sitemap: https://frontend-orcin-zeta-52.vercel.app/sitemap.xml

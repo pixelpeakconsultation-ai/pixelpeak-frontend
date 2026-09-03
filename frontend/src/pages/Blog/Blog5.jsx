@@ -1,8 +1,17 @@
 import { Link } from "react-router-dom";
+import SEO from "../../components/common/SEO/SEO";
 import "./Blog5.css";
 
 function Blog5() {
   return (
+  <>
+    <SEO
+      title="5 Digital Marketing Mistakes Small Businesses Make"
+      description="Discover five common digital marketing mistakes small businesses make and learn how to avoid wasted budgets, missed opportunities, and slow business growth."
+      canonical="https://YOUR-DOMAIN.com/blog/5"
+      keywords="digital marketing mistakes, small business marketing, digital marketing tips, small business SEO, marketing strategy, online business growth"
+    />
+
     <main className="blog5-page">
 
       {/* ==========================================
@@ -695,6 +704,7 @@ function Blog5() {
       </section>
 
     </main>
+  </>
   );
 }
 
