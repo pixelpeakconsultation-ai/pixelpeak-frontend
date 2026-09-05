@@ -837,3 +837,161 @@
     font-size: 0.98rem;
   }
 }
+
+/* =========================================
+   FULL DARK THEME
+   ========================================= */
+
+.website-dev-intro,
+.website-dev-services,
+.website-dev-process,
+.website-dev-faq {
+  background: #050b14;
+}
+
+.website-dev-benefits,
+.website-dev-pricing,
+.website-dev-why {
+  background: #07111d;
+}
+
+/* Section headings */
+.website-dev-section-heading h2 {
+  color: #ffffff;
+}
+
+.website-dev-section-heading.centered > p {
+  color: #9fb0c0;
+}
+
+/* Intro */
+.website-dev-intro-content p {
+  color: #aebdcc;
+}
+
+/* Benefit cards */
+.website-dev-benefit-card {
+  border-color: rgba(255, 255, 255, 0.08);
+  background: #08111d;
+  box-shadow: none;
+}
+
+.website-dev-benefit-card:hover {
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+}
+
+.website-dev-benefit-card h3 {
+  color: #ffffff;
+}
+
+.website-dev-benefit-card p {
+  color: #9fb0c0;
+}
+
+/* Service cards */
+.website-dev-service-card {
+  border-color: rgba(255, 255, 255, 0.08);
+  background: #08111d;
+  box-shadow: none;
+}
+
+.website-dev-service-card:hover {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.website-dev-service-card h3 {
+  color: #ffffff;
+}
+
+.website-dev-service-card p {
+  color: #9fb0c0;
+}
+
+/* Pricing */
+.website-dev-price-card {
+  border-color: rgba(255, 255, 255, 0.08);
+  background: #08111d;
+  box-shadow: none;
+}
+
+.website-dev-price-card.featured {
+  border-color: #38bdf8;
+  box-shadow: 0 20px 55px rgba(56, 189, 248, 0.08);
+}
+
+.website-dev-price-card h3,
+.website-dev-price {
+  color: #ffffff;
+}
+
+.website-dev-price-card > p {
+  color: #9fb0c0;
+}
+
+.website-dev-price-card li {
+  color: #c7d2dc;
+}
+
+.website-dev-custom-note {
+  color: #8fa0b0;
+}
+
+/* Process */
+.website-dev-process-step h3 {
+  color: #ffffff;
+}
+
+.website-dev-process-step p {
+  color: #9fb0c0;
+}
+
+/* Why PixelPeak */
+.website-dev-why-grid > div {
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: #08111d;
+}
+
+.website-dev-why-grid h3 {
+  color: #ffffff;
+}
+
+.website-dev-why-grid p {
+  color: #9fb0c0;
+}
+
+/* FAQ */
+.website-dev-faq-list details {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.website-dev-faq-list summary {
+  color: #ffffff;
+}
+
+.website-dev-faq-list details p {
+  color: #9fb0c0;
+}
+
+/* Slight section separation */
+.website-dev-intro,
+.website-dev-benefits,
+.website-dev-services,
+.website-dev-features,
+.website-dev-pricing,
+.website-dev-process,
+.website-dev-why,
+.website-dev-faq,
+.website-dev-final-cta {
+  position: relative;
+}
+
+/* Consistent dark cards */
+.website-dev-benefit-card,
+.website-dev-service-card,
+.website-dev-price-card,
+.website-dev-why-grid > div {
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
