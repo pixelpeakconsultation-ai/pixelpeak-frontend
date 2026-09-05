@@ -23,6 +23,7 @@ import Blog3 from "../pages/Blog/Blog3";
 import Blog4 from "../pages/Blog/Blog4";
 import Blog5 from "../pages/Blog/Blog5";
 import Blog6 from "../pages/Blog/Blog6";
+import Blog7 from "../pages/Blog/Blog7";
 
 // Legal Pages
 import PrivacyPolicy from "../pages/PrivacyPolicy/PrivacyPolicy";
@@ -106,6 +107,8 @@ function AppRoutes() {
       <Route path="/blog/5" element={<Blog5 />} />
 
       <Route path="/blog/6" element={<Blog6 />} />
+
+      <Route path="/blog/how-much-does-a-business-website-cost-in-the-usa"element={<Blog7 />}/>
 
 
       {/* ==========================================

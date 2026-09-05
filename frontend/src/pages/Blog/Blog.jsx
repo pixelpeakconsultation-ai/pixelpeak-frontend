@@ -69,6 +69,17 @@ const blogPosts = [
     image:
       "https://images.unsplash.com/photo-1553484771-371a605b060b?auto=format&fit=crop&w=1000&q=80",
   },
+  {
+  id: 7,
+  category: "Website Development",
+  date: "September 5, 2026",
+  title: "How Much Does a Business Website Cost in the USA?",
+  excerpt:
+    "Learn how much a business website costs in the USA in 2026, what affects website development pricing, and what small businesses should expect to invest.",
+  image:
+    "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=80",
+  link: "/blog/how-much-does-a-business-website-cost-in-the-usa",
+},
 ];
 
 function Blog() {
@@ -345,7 +356,7 @@ function Blog() {
                   <p>{post.excerpt}</p>
 
                   <Link
-                    to={`/blog/${post.id}`}
+                    to={post.link || `/blog/${post.id}`}
                     className="card-read-more"
                   >
                     Read More
