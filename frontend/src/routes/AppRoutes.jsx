@@ -4,6 +4,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "../pages/Home/Home";
 import About from "../pages/About/About";
 import Services from "../pages/Services/Services";
+import WebsiteDeveloperUSA from "../pages/Services/WebsiteDeveloperUSA";
 import Portfolio from "../pages/Portfolio/Portfolio";
 import Pricing from "../pages/Pricing/Pricing";
 import Blog from "../pages/Blog/Blog";
@@ -45,6 +46,8 @@ function AppRoutes() {
       <Route path="/about" element={<About />} />
 
       <Route path="/services" element={<Services />} />
+
+      <Route path="/services/website-developer-usa"element={<WebsiteDeveloperUSA />}/>
 
       <Route path="/portfolio" element={<Portfolio />} />
 

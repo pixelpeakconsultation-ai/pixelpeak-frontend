@@ -1,0 +1,839 @@
+/* =========================================
+   WEBSITE DEVELOPER USA
+   ========================================= */
+
+.website-dev-container {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+}
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.website-dev-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 110px 0 100px;
+  background: #050b14;
+}
+
+.website-dev-hero::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: -220px;
+  right: -120px;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.08);
+  filter: blur(80px);
+}
+
+.website-dev-hero::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  bottom: -180px;
+  left: -100px;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.05);
+  filter: blur(70px);
+}
+
+.website-dev-hero .website-dev-container {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.website-dev-hero-content {
+  max-width: 680px;
+}
+
+.website-dev-eyebrow,
+.website-dev-section-heading span,
+.website-dev-features-content > span,
+.website-dev-final-cta span {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #38bdf8;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.website-dev-hero h1 {
+  margin: 0 0 25px;
+  color: #ffffff;
+  font-size: clamp(2.7rem, 5vw, 4.7rem);
+  line-height: 1.08;
+  letter-spacing: -2px;
+}
+
+.website-dev-hero-content > p {
+  max-width: 650px;
+  margin: 0;
+  color: #aebdcc;
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.website-dev-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 35px;
+}
+
+.website-dev-primary-btn,
+.website-dev-secondary-btn,
+.website-dev-price-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 0 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.website-dev-primary-btn {
+  color: #03111d;
+  background: #38bdf8;
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
+}
+
+.website-dev-primary-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(56, 189, 248, 0.25);
+}
+
+.website-dev-secondary-btn {
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.website-dev-secondary-btn:hover {
+  transform: translateY(-3px);
+  border-color: rgba(56, 189, 248, 0.5);
+}
+
+/* =========================================
+   HERO CODE CARD
+   ========================================= */
+
+.website-dev-hero-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.website-dev-code-card {
+  width: min(100%, 500px);
+  overflow: hidden;
+  border: 1px solid rgba(56, 189, 248, 0.16);
+  border-radius: 16px;
+  background: #08111d;
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.35),
+    0 0 50px rgba(56, 189, 248, 0.05);
+  transform: rotate(1deg);
+}
+
+.code-card-top {
+  display: flex;
+  gap: 7px;
+  padding: 15px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.code-card-top span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #334155;
+}
+
+.code-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 30px;
+  color: #38bdf8;
+  font-family: "Courier New", monospace;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.code-content .code-indent {
+  padding-left: 28px;
+  color: #9fb0c0;
+}
+
+/* =========================================
+   INTRO
+   ========================================= */
+
+.website-dev-intro {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.website-dev-intro .website-dev-container {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.website-dev-section-heading h2 {
+  margin: 0;
+  color: #07111d;
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+
+.website-dev-intro-content p {
+  margin: 0 0 22px;
+  color: #5c6875;
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+.website-dev-intro-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================
+   BENEFITS
+   ========================================= */
+
+.website-dev-benefits {
+  padding: 100px 0;
+  background: #f6f9fc;
+}
+
+.website-dev-section-heading.centered {
+  max-width: 760px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.website-dev-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.website-dev-benefit-card {
+  padding: 35px 28px;
+  border: 1px solid #e4ebf2;
+  border-radius: 14px;
+  background: #ffffff;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.website-dev-benefit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(10, 30, 50, 0.08);
+}
+
+.website-dev-benefit-card svg {
+  margin-bottom: 25px;
+  color: #38bdf8;
+  font-size: 1.7rem;
+}
+
+.website-dev-benefit-card h3 {
+  margin: 0 0 12px;
+  color: #07111d;
+  font-size: 1.15rem;
+}
+
+.website-dev-benefit-card p {
+  margin: 0;
+  color: #687582;
+  line-height: 1.7;
+}
+
+/* =========================================
+   SERVICES
+   ========================================= */
+
+.website-dev-services {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.website-dev-services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.website-dev-service-card {
+  position: relative;
+  padding: 38px;
+  border: 1px solid #e4ebf2;
+  border-radius: 14px;
+  background: #ffffff;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.website-dev-service-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(56, 189, 248, 0.45);
+  box-shadow: 0 20px 50px rgba(10, 30, 50, 0.08);
+}
+
+.website-dev-service-card svg {
+  margin-bottom: 24px;
+  color: #38bdf8;
+  font-size: 1.8rem;
+}
+
+.website-dev-service-card h3 {
+  margin: 0 0 12px;
+  color: #07111d;
+  font-size: 1.3rem;
+}
+
+.website-dev-service-card p {
+  max-width: 600px;
+  margin: 0;
+  color: #687582;
+  line-height: 1.75;
+}
+
+/* =========================================
+   FEATURES
+   ========================================= */
+
+.website-dev-features {
+  padding: 105px 0;
+  background: #050b14;
+}
+
+.website-dev-features-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.website-dev-features-content h2 {
+  margin: 0 0 20px;
+  color: #ffffff;
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  line-height: 1.15;
+}
+
+.website-dev-features-content > p {
+  max-width: 720px;
+  margin: 0 auto;
+  color: #aebdcc;
+  line-height: 1.8;
+}
+
+.website-dev-check-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px 30px;
+  max-width: 800px;
+  margin: 45px auto 0;
+  text-align: left;
+}
+
+.website-dev-check-list div {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: #d8e3ec;
+  line-height: 1.5;
+}
+
+.website-dev-check-list svg,
+.website-dev-why-grid svg {
+  flex-shrink: 0;
+  color: #38bdf8;
+}
+
+/* =========================================
+   PRICING
+   ========================================= */
+
+.website-dev-pricing {
+  padding: 105px 0;
+  background: #f6f9fc;
+}
+
+.website-dev-section-heading.centered > p {
+  max-width: 650px;
+  margin: 20px auto 0;
+  color: #687582;
+  line-height: 1.8;
+}
+
+.website-dev-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 500px));
+  justify-content: center;
+  gap: 28px;
+}
+
+.website-dev-price-card {
+  position: relative;
+  padding: 42px;
+  border: 1px solid #dfe8f0;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 15px 40px rgba(10, 30, 50, 0.05);
+}
+
+.website-dev-price-card.featured {
+  border: 2px solid #38bdf8;
+  box-shadow: 0 20px 55px rgba(56, 189, 248, 0.1);
+}
+
+.price-label {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #38bdf8;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.website-dev-price-card h3 {
+  margin: 0 0 12px;
+  color: #07111d;
+  font-size: 1.8rem;
+}
+
+.website-dev-price {
+  margin-bottom: 15px;
+  color: #07111d;
+  font-size: 2.7rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.website-dev-price-card > p {
+  min-height: 65px;
+  margin: 0 0 28px;
+  color: #687582;
+  line-height: 1.7;
+}
+
+.website-dev-price-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0 0 32px;
+  padding: 0;
+  list-style: none;
+}
+
+.website-dev-price-card li {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  color: #465461;
+  line-height: 1.5;
+}
+
+.website-dev-price-card li svg {
+  flex-shrink: 0;
+  margin-top: 4px;
+  color: #38bdf8;
+  font-size: 0.8rem;
+}
+
+.website-dev-price-btn {
+  width: 100%;
+  box-sizing: border-box;
+  color: #ffffff;
+  background: #07111d;
+}
+
+.website-dev-price-btn:hover {
+  transform: translateY(-3px);
+  background: #0d1d2d;
+}
+
+.website-dev-custom-note {
+  max-width: 800px;
+  margin: 35px auto 0;
+  color: #687582;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* =========================================
+   PROCESS
+   ========================================= */
+
+.website-dev-process {
+  padding: 105px 0;
+  background: #ffffff;
+}
+
+.website-dev-process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px 30px;
+}
+
+.website-dev-process-step {
+  position: relative;
+  padding-left: 5px;
+}
+
+.website-dev-process-step > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 22px;
+  border-radius: 50%;
+  color: #07111d;
+  background: #38bdf8;
+  font-weight: 800;
+}
+
+.website-dev-process-step h3 {
+  margin: 0 0 12px;
+  color: #07111d;
+  font-size: 1.25rem;
+}
+
+.website-dev-process-step p {
+  margin: 0;
+  color: #687582;
+  line-height: 1.75;
+}
+
+/* =========================================
+   WHY PIXELPEAK
+   ========================================= */
+
+.website-dev-why {
+  padding: 105px 0;
+  background: #f6f9fc;
+}
+
+.website-dev-why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.website-dev-why-grid > div {
+  padding: 30px;
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+.website-dev-why-grid svg {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.website-dev-why-grid h3 {
+  margin: 0 0 12px;
+  color: #07111d;
+  font-size: 1.15rem;
+}
+
+.website-dev-why-grid p {
+  margin: 0;
+  color: #687582;
+  line-height: 1.7;
+}
+
+/* =========================================
+   FAQ
+   ========================================= */
+
+.website-dev-faq {
+  padding: 105px 0;
+  background: #ffffff;
+}
+
+.website-dev-faq-list {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.website-dev-faq-list details {
+  border-bottom: 1px solid #dfe7ee;
+}
+
+.website-dev-faq-list summary {
+  position: relative;
+  padding: 23px 45px 23px 0;
+  color: #07111d;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+}
+
+.website-dev-faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.website-dev-faq-list summary::after {
+  content: "+";
+  position: absolute;
+  top: 18px;
+  right: 4px;
+  color: #38bdf8;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.website-dev-faq-list details[open] summary::after {
+  content: "−";
+}
+
+.website-dev-faq-list details p {
+  max-width: 780px;
+  margin: 0;
+  padding: 0 40px 25px 0;
+  color: #687582;
+  line-height: 1.8;
+}
+
+/* =========================================
+   FINAL CTA
+   ========================================= */
+
+.website-dev-final-cta {
+  position: relative;
+  overflow: hidden;
+  padding: 110px 0;
+  background: #050b14;
+}
+
+.website-dev-final-cta::before {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  top: -200px;
+  right: -100px;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.08);
+  filter: blur(80px);
+}
+
+.website-dev-final-cta .website-dev-container {
+  position: relative;
+  z-index: 1;
+}
+
+.website-dev-final-cta h2 {
+  max-width: 750px;
+  margin: 0 0 20px;
+  color: #ffffff;
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+}
+
+.website-dev-final-cta p {
+  max-width: 650px;
+  margin: 0 0 32px;
+  color: #aebdcc;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1000px) {
+  .website-dev-hero .website-dev-container {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .website-dev-hero-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .website-dev-hero-content > p {
+    margin: 0 auto;
+  }
+
+  .website-dev-hero-buttons {
+    justify-content: center;
+  }
+
+  .website-dev-hero-visual {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .website-dev-intro .website-dev-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .website-dev-benefits-grid,
+  .website-dev-why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .website-dev-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+  .website-dev-container {
+    width: min(92%, 560px);
+  }
+
+  .website-dev-hero,
+  .website-dev-intro,
+  .website-dev-benefits,
+  .website-dev-services,
+  .website-dev-features,
+  .website-dev-pricing,
+  .website-dev-process,
+  .website-dev-why,
+  .website-dev-faq,
+  .website-dev-final-cta {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .website-dev-hero h1 {
+    font-size: 2.55rem;
+    letter-spacing: -1px;
+  }
+
+  .website-dev-hero-content > p {
+    font-size: 1rem;
+  }
+
+  .website-dev-hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .website-dev-primary-btn,
+  .website-dev-secondary-btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .website-dev-code-card {
+    transform: none;
+  }
+
+  .code-content {
+    padding: 22px;
+    font-size: 0.78rem;
+  }
+
+  .website-dev-section-heading h2 {
+    font-size: 2rem;
+  }
+
+  .website-dev-benefits-grid,
+  .website-dev-services-grid,
+  .website-dev-check-list,
+  .website-dev-pricing-grid,
+  .website-dev-process-grid,
+  .website-dev-why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .website-dev-benefit-card,
+  .website-dev-service-card,
+  .website-dev-price-card {
+    padding: 28px;
+  }
+
+  .website-dev-price {
+    font-size: 2.35rem;
+  }
+
+  .website-dev-price-card > p {
+    min-height: auto;
+  }
+
+  .website-dev-final-cta h2 {
+    font-size: 2.45rem;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+  .website-dev-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .website-dev-eyebrow,
+  .website-dev-section-heading span,
+  .website-dev-features-content > span,
+  .website-dev-final-cta span {
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+  }
+
+  .website-dev-code-card {
+    border-radius: 10px;
+  }
+
+  .code-content {
+    gap: 8px;
+    padding: 18px;
+    font-size: 0.68rem;
+  }
+
+  .code-content .code-indent {
+    padding-left: 15px;
+  }
+
+  .website-dev-final-cta h2 {
+    font-size: 2.1rem;
+  }
+
+  .website-dev-faq-list summary {
+    font-size: 0.98rem;
+  }
+}
